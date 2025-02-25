@@ -1,12 +1,5 @@
 import Image from "next/image";
-import {
-  FaUser,
-  FaEnvelope,
-  FaPhone,
-  FaCalendarAlt,
-  FaVenusMars,
-  FaClipboardList,
-} from "react-icons/fa";
+
 
 const Appointment = () => {
   return (
