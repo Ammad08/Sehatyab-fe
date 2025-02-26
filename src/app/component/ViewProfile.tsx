@@ -3,7 +3,7 @@ import { FaStar,FaRegStar } from "react-icons/fa";
 
 const ViewProfile = () => {
   return (
-    <div className="py-10 flex flex-col items-center gap-4 font-inter 2xl:mx-96  lg:flex-row lg:items-start 2xl:gap-10 ">
+    <div className="py-10 mx- flex flex-col items-center gap-4  2xl:mx-96  lg:flex-row lg:items-start 2xl:gap-0 ">
       <div className="w-2/3 mx-2 ">
 
 
@@ -46,7 +46,7 @@ const ViewProfile = () => {
 
     {/* Specialty & Experience */}
     <p className="text-sm sm:text-base text-gray-700 mt-1">Pediatric Neurologist</p>
-    <p className="text-sm sm:text-base text-[rgba(33,37,41,1)] font-semibold">Experience: 10 Year(s)</p>
+    <p className="text-sm sm:text-base text-black font-semibold">Experience: 10 Year(s)</p>
   </div>
 </div>
 
@@ -137,7 +137,7 @@ const ViewProfile = () => {
   </h2>
 
   {/* Education */}
-  <div className="grid grid-cols-1  sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)]  text-xs">
+  <div className="grid grid-cols-1  sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] font-semibold text-xs">
     <ul className="list-disc pl-5 ">
       <li className="">FCPS - COLLEGE OF PHYSICIANS & SURGEONS PAKISTAN</li>
     </ul>
@@ -147,8 +147,8 @@ const ViewProfile = () => {
   </div>
 
   {/* Specializations */}
-  <h1 className="text-md sm:text-lg font-semibold  mb-4 mt-6">Specializations</h1>
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-xs ">
+  <h3 className="text-md sm:text-lg font-semibold mt-6">Specializations</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-xs font-semibold">
     <ul className="list-disc pl-5">
       <li>Paediatric Neurologist</li>
     </ul>
@@ -158,8 +158,8 @@ const ViewProfile = () => {
   </div>
 
   {/* Languages */}
-  <h3 className="text-md sm:text-xl font-semibold  mb-4 mt-6 t">Languages</h3>
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-xs ">
+  <h3 className="text-md sm:text-xl font-semibold mt-6">Languages</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-xs font-semibold">
     <ul className="list-disc pl-5 ">
       <li>English</li>
       <li className="mt-2">Punjabi</li>
@@ -170,8 +170,8 @@ const ViewProfile = () => {
   </div>
 
   {/* Experience */}
-  <h3 className="text-md sm:text-xl font-semibold mb-4 mt-6 t">Experience</h3>
-  <ul className="list-disc pl-5 pr-32 text-[rgba(100,100,100,1)] text-xs  ">
+  <h3 className="text-md sm:text-xl font-semibold mt-6">Experience</h3>
+  <ul className="list-disc pl-5 pr-32 text-[rgba(100,100,100,1)] text-xs font-semibold ">
     <li>
        2014 - Present, Paediatric Neurologist (Child Neurophysician) &
       <p className="mt-2">Paediatrician (Child Specialist), Children Hospital & Institute Of Child </p>
@@ -268,16 +268,14 @@ const ViewProfile = () => {
 
 
 
-      <div className="w-2/3 md:w-1/3  ">
-
-
+      <div className="w-2/3 md:w-1/3 ">
       <div className=" w-full md:w-[350px] flex flex-col justify-start space-y-4">
   {/* 1st Form */}
-  <div className="bg-white p-4 2xl:max-w-[450px]  sm:p-6 rounded-lg shadow-lg border">
+  <div className="bg-white p-4 2xl:w-[400px]  sm:p-6 rounded-lg shadow-lg border">
     {/* Header */}
-    <div className="flex flex-wrap justify-center text-center  items-center  md:space-x-2">
+    <div className="flex items-center  space-x-2">
       <img src="/ViewProfile/GreenCall.png" alt="" className="w-6 h-6" />
-      <h2 className="text-sm md:text-lg   font-semibold text-[rgba(6,104,95,1)]">
+      <h2 className="text-lg sm:text-xl  font-semibold text-[rgba(6,104,95,1)]">
         Online Video Consultation
       </h2>
     </div>
@@ -292,7 +290,7 @@ const ViewProfile = () => {
     <div className="border-t my-4"></div>
 
     {/* Days */}
-    <div className="flex flex-col md:flex-row flex-wrap text-start md:text-center  md:items-center justify-start md:justify-between mt-4">
+    <div className="flex flex-wrap justify-between mt-4">
       <p className="text-[rgba(100,100,100,1)] text-sm font-semibold">Days:</p>
       <p className="text-black font-semibold text-sm text-right">Tue, Wed, Thu, Fri, Sat</p>
     </div>
@@ -301,13 +299,13 @@ const ViewProfile = () => {
     <div className="border-t my-4"></div>
 
     {/* Available Today */}
-    <div className="flex flex-col md:flex-row flex-wrap text-start md:text-center  md:items-center justify-start md:justify-between mb-4">
+    <div className="flex flex-wrap justify-between items-center mb-4">
       <p className="text-[rgba(100,100,100,1)] text-sm font-medium">Available Today:</p>
       <p className="text-gray-800  text-sm font-medium">09:00 AM - 05:00 PM</p>
     </div>
 
     {/* Schedule */}
-    <div className="mt-2 space-y-2">
+    <div className="mt-2 space-y-4">
       {[
         { day: "Tuesday", time: "12:30 PM - 02:00 PM" },
         { day: "Wednesday", time: "12:30 PM - 02:00 PM" },
@@ -315,7 +313,7 @@ const ViewProfile = () => {
         { day: "Friday", time: "09:00 AM - 05:00 PM" },
         { day: "Saturday", time: "12:30 PM - 02:00 PM" },
       ].map((slot, index) => (
-        <div key={index} className="flex flex-col md:flex-row flex-wrap text-start md:text-center  md:items-center justify-start md:justify-between">
+        <div key={index} className="flex flex-wrap justify-between">
           <p className="text-gray-800 font-semibold text-sm">{slot.day}</p>
           <p className="text-gray-800 font-semibold text-sm">{slot.time}</p>
         </div>
@@ -323,30 +321,28 @@ const ViewProfile = () => {
     </div>
 
     {/* Button */}
-    <div className="mt-6 text-center text-xs md:text-base  ">
-      <button className="w-full flex flex-wrap items-center justify-center space-x-2 font-inter border border-[rgba(38,118,117,1)] text-[rgba(38,118,117,1)] font-bold py-2 rounded-full hover:bg-green-50 transition">
-        <img src="/ViewProfile/Symbol.png" alt="" className="w-4 h-4 hidden md:flex" />
+    <div className="mt-6 text-center">
+      <button className="w-full flex items-center justify-center space-x-2 font-inter border border-[rgba(38,118,117,1)] text-[rgba(38,118,117,1)] font-bold py-2 rounded-full hover:bg-green-50 transition">
+        <img src="/ViewProfile/Symbol.png" alt="" className="w-4 h-4 hidden md:block" />
         <span>Book Video Consultation</span>
       </button>
     </div>
 </div>
 
-
-
-
   {/* 2nd Form */}
-  <div className="bg-white p-6 2xl:max-w-[450px] rounded-lg shadow-lg border">
+  <div className="bg-white p-6 space-y-4  2xl:w-[400px] rounded-lg shadow-lg border">
     {/* Header */}
-    <div className="flex flex-wrap justify-center text-center  items-center space-x-2">
+    <div className="flex items-center space-x-2">
       <img src="/ViewProfile/Background.png" alt="" />
       <h2 className="text-lg font-semibold text-[rgba(6,104,95,1)]">
         Ibrahim Specialist Clinic
       </h2>
      
     </div>
-    <p className="text-[rgba(100,100,100,1)] text-xs font-medium text-center mt-4">West Canal Road ,Amin Town ,Near Ideal Bakers and</p>
-     <p className="text-[rgba(100,100,100,1)] text-xs font-medium pl-2 mt-1">  Kashmir Pul, Faisalabad</p>
-
+    <div className="flex flex-col mx-6 justify-center">
+    <p className="text-[rgba(100,100,100,1)] text-xs font-medium text- mb-4">West Canal Road ,Amin Town ,Near Ideal Bakers and <br/> Kashmir Pul, Faisalabad</p>
+     {/* <p className="text-[rgba(100,100,100,1)] text-xs space-y-0 font-medium pl-2 mt-1">  Kashmir Pul, Faisalabad</p> */}
+     </div>
      {/* Fees */}
      <div className="mt-4 flex justify-between">
       <p className="text-[rgba(100,100,100,1)] text-sm font-semibold">Fees:</p>
@@ -366,11 +362,11 @@ const ViewProfile = () => {
     {/* Available Today */}
     <div className="flex flex-wrap justify-between items-center">
       <p className="text-[rgba(100,100,100,1)] text-sm font-semibold">Available Today:</p>
-      <p className="text-gray-800 text-sm font-semibold">05:00 PM - 08:00 PM </p>
+      <p className="text-gray-800 text-sm font-semibold">05:00 PM - 08:00 PM ⌃</p>
     </div>
 
     {/* Schedule */}
-    <div className="mt-2 space-y-2">
+    <div className="mt-2 mb- space-y-4">
       {[
         { day: "Tuesday", time: "05:00 PM - 08:00 PM" },
         { day: "Wednesday", time: "05:00 PM - 08:00 PM" },
@@ -378,7 +374,7 @@ const ViewProfile = () => {
         { day: "Friday", time: "05:00 PM - 08:00 PM" },
         { day: "Saturday", time: "05:00 PM - 08:00 PM" },
       ].map((slot, index) => (
-        <div key={index} className="flex justify-between flex-wrap">
+        <div key={index} className="flex flex-wrap justify-between">
           <p className="text-gray-800 text-sm font-semibold">{slot.day}</p>
           <p className="text-gray-800 text-sm font-semibold">{slot.time}</p>
         </div>
@@ -386,7 +382,7 @@ const ViewProfile = () => {
     </div>
 
     {/* Button */}
-    <div className="mt-6 text-center text-xs md:text-base">
+    <div className="mt- text-center">
       <button className="w-full flex items-center justify-center space-x-2 border border-[rgba(255,188,10,1)] text-[rgba(255,188,10,1)] font-bold font-inter py-2 rounded-full hover:bg-green-50 transition">
         <span>Book Appointment</span>
       </button>

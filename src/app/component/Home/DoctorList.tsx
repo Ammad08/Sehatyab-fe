@@ -2,6 +2,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define clinic images
 const clinicImages = {
@@ -141,9 +142,14 @@ const DoctorList: React.FC = () => {
                   Book Appointment
                   <span className="text-xs">No Booking Fee</span>
                 </button>
+                {/* <Link href="/viewprofile"> */}
                 <button className="text-sm font-semibold border border-[rgba(24,78,81,1)] text-[rgba(24,78,81,1)] px-6 py-2 rounded-full hover:bg-gray-100">
+                 <Link href="/viewprofile">
+
                   View Profile
+                  </Link>
                 </button>
+                {/* </Link> */}
               </div>
             </div>
 
