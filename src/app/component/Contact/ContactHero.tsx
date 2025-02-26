@@ -25,7 +25,7 @@ const ContactHero = () => {
                     {/* Flex container for text & rating */}
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
                         <p className="text-white font-poppins font-medium max-w-xl text-left leading-relaxed">
-                            Get in touch with us for any inquiries or assistance. We are here to help you with your solar energy needs.
+                            Get in touch with us for any inquiries or assistance. We are here to help you with all the problems related to your health.
                         </p>
 
                         {/* Google Rating */}

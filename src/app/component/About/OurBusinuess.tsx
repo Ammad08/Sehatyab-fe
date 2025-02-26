@@ -16,8 +16,7 @@ const OurBusiness = () => {
                         We Have Goals To Be #1 And <br className="hidden md:block" /> Great Psychiatrist Services & Solution
                     </h2>
                     <p className="text-[#6E6E6E] mt-4 font-commissioner text-sm md:text-base leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-                        ullamcorper mattis, pulvinar dapibus leo.
+                    We provide exceptional healthcare services, integrating advanced medical solutions with compassionate care to enhance overall well-being.
                     </p>
 
                     {/* Image & Extra Text */}
@@ -30,8 +29,7 @@ const OurBusiness = () => {
                             className="rounded-lg "
                         />
                         <p className="text-[#6E6E6E] font-commissioner text-sm md:text-base leading-relaxed">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                        Dedicated to excellence, we ensure innovative treatments, patient-centered care, and holistic wellness approaches for a healthier and better future.
                         </p>
                     </div>
 
@@ -49,9 +47,9 @@ const OurBusiness = () => {
                 {/* Right Timeline Section */}
                 <div className="space-y-6">
                     {[
-                        { year: "2010", title: "Freelance Psychiatrist" },
-                        { year: "2016", title: "Social Psychiatrist Corp" },
-                        { year: "2022", title: "Best Public Psychiatrist Solution" }
+                        { year: "2010", title: "Freelance Psychiatrist", Description:"Providing personalized mental health care, therapy, and expert consultations to support emotional well-being and psychological resilience." },
+                        { year: "2016", title: "Social Psychiatrist Corp", Description:"Dedicated to addressing societal mental health challenges through community-based therapy, counseling, and advocacy programs." },
+                        { year: "2022", title: "Best Public Psychiatrist Solution", Description:"Offering accessible and effective psychiatric services, ensuring quality mental health support for individuals from all backgrounds." }
                     ].map((item, index) => (
                         <div
                             key={index}
@@ -66,8 +64,7 @@ const OurBusiness = () => {
                             <div className="ml-4 mt-3 sm:mt-0">
                                 <h4 className="text-[#06685F] font-commissioner font-bold text-lg">{item.title}</h4>
                                 <p className="text-[#6E6E6E] font-commissioner text-sm md:text-base">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-                                    luctus nec ullamcorper mattis.
+                                {item.Description}
                                 </p>
                             </div>
                         </div>
