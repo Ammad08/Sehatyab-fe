@@ -27,7 +27,7 @@ export default function OurConsultants() {
           {/* Right Section */}
           <div className="md:w-1/2 text-left">
             <p className="text-black text-justify mb-4 sm:mb-6 text-sm sm:text-base">
-              Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Experienced healthcare professionals providing expert guidance. Our team ensures personalized care, innovative solutions, and holistic wellness support.
             </p>
             <button className="bg-[rgba(255,188,10,1)] text-md font-semibold text-white px-4 sm:px-6 py-2 rounded-full hover:bg-yellow-500 transition">
               View More Doctors

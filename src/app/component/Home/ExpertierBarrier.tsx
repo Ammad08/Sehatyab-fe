@@ -22,7 +22,7 @@ const cards = [
     {
         id: 1,
         title: 'Quality Services',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: 'We provide top-tier healthcare solutions, ensuring patient well-being.',
         image: '/Home/QualityServices.svg',
         bgColor: 'bg-white',
         textColor: 'text-[#06685F]',
@@ -30,7 +30,7 @@ const cards = [
     {
         id: 2,
         title: 'Professional Team',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: 'Our skilled doctors and staff deliver expert medical care.',
         image: '/Home/ProfessionalTeam.svg',
         bgColor: 'bg-[#1DA678]',
         textColor: 'text-white',
@@ -38,7 +38,7 @@ const cards = [
     {
         id: 3,
         title: 'Dedicated Support',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        description: '24/7 assistance to help you with all health-related concerns.',
         image: '/Home/DedicatedSupport.svg',
         bgColor: 'bg-white',
         textColor: 'text-[#06685F]',

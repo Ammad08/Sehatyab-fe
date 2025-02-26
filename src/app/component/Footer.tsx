@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         {/* About Section */}
         <div className="space-y-4 mt-4 col-span-1 sm:col-span-2">
           <p className="text-md font-bold text-[rgba(255,255,255,0.82)] pt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia suscipit ab quibusdam, quidem dolore nam cupiditate.
+          Providing trusted healthcare solutions with excellence. Dedicated to your well-being, we ensure compassionate care and innovative medical services.
           </p>
           <div className="flex justify-center sm:justify-start space-x-3">
             {[FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn].map((Icon, index) => (

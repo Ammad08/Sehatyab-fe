@@ -8,7 +8,7 @@ const BlogContent = () => {
       title: "Mindfulness Matters: Harnessing the Present Moment for Mental Well-being",
       date: "April 17, 2024",
       comments: "No Comments",
-      description: "Homepage Blog Our Blog Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. 4.8 Google Rating",
+      description: "MPracticing mindfulness daily helps in reducing anxiety, enhancing self-awareness, and promoting mental clarity for a balanced and fulfilling life.",
       image: "/Home/Blog1.png",
     },
     {
@@ -16,7 +16,7 @@ const BlogContent = () => {
       title: "The Science of Happiness: Cultivating Joy and Fulfillment",
       date: "April 17, 2024",
       comments: "No Comments",
-      description: "Homepage Blog Our Blog Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. 4.8 Google Rating",
+      description: "Exploring the psychology of happiness reveals ways to improve emotional resilience, cultivate gratitude, and create a fulfilling and joyful existence.",
       image: "/Home/Blog2.png",
     },
     {
@@ -24,7 +24,7 @@ const BlogContent = () => {
       title: "Understanding Relationships: Tools for Healthy Connections",
       date: "April 17, 2024",
       comments: "No Comments",
-      description: "Homepage Blog Our Blog Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. 4.8 Google Rating",
+      description: "Developing strong relationships requires trust, empathy, and active listening, fostering meaningful connections for a happier and healthier life.",
       image: "/Home/Blog3.png",
     },
   ];
