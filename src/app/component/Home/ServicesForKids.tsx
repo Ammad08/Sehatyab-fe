@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const ServicesForKids: React.FC = () => {
@@ -64,9 +65,11 @@ const ServicesForKids: React.FC = () => {
                 </div>
 
                 <div className="text-center mt-12">
+                    <Link href="/appointment">
                     <button className=" font-poppins font-semibold bg-[#FFBC0A] hover:bg-[#E5A509] text-white w-fit  transform  py-3 px-6 rounded-sm shadow-md shadow-gray-700 hover:scale-105 transition ease-in-out duration-500">
                         Book Appointment
                     </button>
+                    </Link>
                 </div>
             </section>
         </main>
