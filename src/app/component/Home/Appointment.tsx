@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Appointment = () => {
@@ -149,13 +150,15 @@ const Appointment = () => {
                 <span>{hours}</span>
               </li>
             ))}
-            <li className="flex justify-center font-semibold text-[#2BA56A] mt-2">
-              24/7 Emergency Care Open
+            <li className="flex justify-start font-normal text-gray-900 mt-2">
+              24*7 Emergency Care Open
             </li>
           </ul>
+          <Link href="/contact">
           <button className="w-full bg-[#1DA678] text-white p-3 rounded-full font-semibold hover:bg-[#238A56] mt-4 transition-all">
             Contact Us
           </button>
+          </Link>
         </div>
       </div>
     </div>

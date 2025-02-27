@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const MentalHealthDirectory: React.FC = () => {
     return (
@@ -47,9 +48,11 @@ const MentalHealthDirectory: React.FC = () => {
                         ))}
                     </ul>
                     <div className="text-left">
+                        <Link href="/about">
                         <button className=" font-commissioner font-bold bg-[#FFBC0A] hover:bg-[#E5A509] text-white w-fit  transform  py-3 px-6 rounded-lg shadow-lg hover:scale-105 transition ease-in-out duration-500">
                             MORE ABOUT US
                         </button>
+                        </Link>
                     </div>
                 </div>
             </section>

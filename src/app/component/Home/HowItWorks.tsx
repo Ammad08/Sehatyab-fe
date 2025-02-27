@@ -4,6 +4,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const HowItWorks = () => {
   return (
@@ -78,9 +79,11 @@ const HowItWorks = () => {
 
         {/* Book Appointment Button */}
         <div className="text-center mt-8">
+          <Link href="/appointment">
           <button className="px-6 py-2 text-[rgba(29,166,120,1)] border-2 border-[rgba(29,166,120,1)] rounded-full text-lg font-semibold transition-all duration-300 hover:bg-green-500 hover:text-white">
             Book Appointment
           </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 // pages/our-consultants.tsx 
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaFacebookF, FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
 
 const consultants = [
@@ -29,9 +30,11 @@ export default function OurConsultants() {
             <p className="text-black text-justify mb-4 sm:mb-6 text-sm sm:text-base">
             Experienced healthcare professionals providing expert guidance. Our team ensures personalized care, innovative solutions, and holistic wellness support.
             </p>
+            <Link href="/appointment">
             <button className="bg-[rgba(255,188,10,1)] text-md font-semibold text-white px-4 sm:px-6 py-2 rounded-full hover:bg-yellow-500 transition">
               View More Doctors
             </button>
+            </Link>
           </div>
         </div>
 
