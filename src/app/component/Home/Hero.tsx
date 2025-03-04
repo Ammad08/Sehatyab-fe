@@ -4,6 +4,7 @@ import { useState } from "react";
 import "@fontsource/commissioner";
 import "@fontsource/poppins";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
     const [selectedOption, setSelectedOption] = useState("Human");
@@ -31,9 +32,11 @@ const Hero: React.FC = () => {
                         {/* Button and Rating */}
                         <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
                             <div className="flex flex-col justify-center items-center lg:items-start md:flex-row lg:flex-col gap-4">
+                                <Link href="/services">
                                 <button className=" font-commissioner font-bold bg-[#FFBC0A] hover:bg-[#E5A509] text-white w-fit  transform  py-3 px-6 rounded-lg shadow-lg hover:scale-105 transition ease-in-out duration-500">
                                     Our Services
                                 </button>
+                                </Link>
                                 <div className="flex items-center gap-3">
                                     <Image src="/Home/Google.svg" alt="Google" width={40} height={40} />
                                     <div>
