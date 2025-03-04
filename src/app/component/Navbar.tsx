@@ -67,7 +67,7 @@ const NavBar: React.FC = () => {
             <NavLink
               href={link.href}
               label={link.label}
-              isButton={link.isButton}
+              // isButton={link.isButton}
             />
           </li>
         ))}
@@ -108,7 +108,7 @@ const NavBar: React.FC = () => {
             key={link.href}
             href={link.href}
             label={link.label}
-            isButton={link.isButton}
+            // isButton={link.isButton}
             onClick={() => setIsOpen(false)}
           />
         ))}
