@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const ServicesSection = () => {
     return (
-      <div className="flex flex-col items-center justify-center max-h-screen p-6 md:py-20 bg-white">
+      <div className="flex flex-col items-center justify-center max-h-screen p-6 md:py-20 bg-white my-60 md:my-0">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
           {/* Relationship Issues */}
           <div className="flex flex-col items-start w-full">

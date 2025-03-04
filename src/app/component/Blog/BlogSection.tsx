@@ -70,46 +70,58 @@ const posts = [
 
 const BlogSection: React.FC = () => {
   const [selectedPost, setSelectedPost] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  // Filter posts based on search query
+  const filteredPosts = posts.filter((post) =>
+    post.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-6xl">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-6xl font-commissioner">
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
         {/* Blog Posts Grid */}
         <div className="flex-1">
           {selectedPost === null ? (
             // Show all posts when no post is selected
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
-              {posts.map((post) => (
-                <div
-                  key={post.id}
-                  className="bg-white rounded-md overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-xl duration-300"
-                >
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-48 sm:h-56 object-cover"
-                  />
-                  <div className="p-4 sm:p-5">
-                    <h3 className="text-base sm:text-lg font-bold font-commissioner text-[#06685F]  line-clamp-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-500 text-xs sm:text-sm mt-2">
-                      📅 April 19, 2024   |   📝 No Comments
-                    </p>
-                    <p className="text-gray-600 text-xs sm:text-sm mt-2 line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                    <button
-                      onClick={() => setSelectedPost(post.id)}
-                      className="text-[#06685F] font-semibold mt-3 inline-block hover:underline transition-colors duration-200 text-xs sm:text-base"
-                    >
-                      Read More
-                    </button>
+              {filteredPosts.length > 0 ? (
+                filteredPosts.map((post) => (
+                  <div
+                    key={post.id}
+                    className="bg-white rounded-md overflow-hidden transition-transform transform hover:-translate-y-2 hover:shadow-xl duration-300"
+                  >
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={600}
+                      height={400}
+                      className="w-full h-48 sm:h-56 object-cover"
+                    />
+                    <div className="py-4 sm:py-5 p-2">
+                      <h3 className="text-base sm:text-lg font-bold font-commissioner text-[#06685F] line-clamp-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-500 text-xs sm:text-sm mt-2">
+                        📅 April 19, 2024   |   📝 No Comments
+                      </p>
+                      <p className="text-gray-600 text-xs sm:text-sm mt-2 line-clamp-2">
+                        {post.excerpt}
+                      </p>
+                      <button
+                        onClick={() => setSelectedPost(post.id)}
+                        className="text-[#06685F] font-semibold mt-3 inline-block hover:underline transition-colors duration-200 text-xs sm:text-base"
+                      >
+                        Read More
+                      </button>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))
+              ) : (
+                <p className="text-gray-600 text-center col-span-full">
+                  No posts found matching your search.
+                </p>
+              )}
             </div>
           ) : (
             // Show only the selected post details
@@ -129,7 +141,7 @@ const BlogSection: React.FC = () => {
 
               <div className="p-6 relative flex gap-3 -ml-8 xl:-ml-16">
                 {/* Social Media Icons (Left Sidebar) */}
-                <div className="  flex flex-col space-y-3">
+                <div className="flex flex-col space-y-3">
                   <button className="p-2 bg-[#1DA678] text-white rounded-md hover:bg-[#14795F] transition">
                     <FaFacebookF />
                   </button>
@@ -146,13 +158,13 @@ const BlogSection: React.FC = () => {
 
                 <div>
                   {/* Blog Title */}
-                  <h1 className="text-xl md:text-2xl xl:text-3xl font-commissioner  font-bold text-green-700 leading-tight">
+                  <h1 className="text-xl md:text-2xl xl:text-3xl font-commissioner font-bold text-green-700 leading-tight">
                     {posts.find((post) => post.id === selectedPost)?.title}
                   </h1>
 
                   {/* Post Metadata */}
                   <p className="text-gray-500 text-sm mt-2 font-commissioner">
-                    📅 April 19, 2024 &nbsp; | &nbsp; 📝 No Comments
+                    📅 April 19, 2024   |   📝 No Comments
                   </p>
 
                   {/* Blog Content */}
@@ -177,22 +189,26 @@ const BlogSection: React.FC = () => {
 
         {/* Sidebar */}
         <div className="w-full lg:w-1/3 space-y-6 sm:space-y-8">
-          {/* Search Bar */}
-          <div className="relative">
+          {/* Searchbar */}
+          <div className="flex items-center rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-[#1DA678] bg-gradient-to-r from-[rgba(29,166,120,0.1)] via-[rgba(29,166,120,0.3)] to-[rgba(29,166,120,0.1)]">
             <input
               type="text"
-              placeholder="Search blog posts..."
-              className="w-full py-2 sm:py-3 pl-4 pr-10 sm:pr-12 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-gray-700 text-sm sm:text-base"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full py-2 sm:py-3 px-4 text-gray-700 text-sm sm:text-base bg-transparent focus:outline-none"
             />
-            <FaSearch className="absolute right-3 sm:right-4 top-2.5 sm:top-3 text-gray-500 text-sm sm:text-base" />
+            <button className="p-5 px-7 bg-[#1DA678] hover:bg-green-700 transition text-white flex items-center">
+              <FaSearch className="text-sm" />
+            </button>
           </div>
 
           {/* Featured Posts */}
           <div>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">
+            <h2 className="text-xl sm:text-2xl font-bold font-commissioner mb-4 text-[#06685F]">
               Featured Posts
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-5">
               {posts.slice(0, 4).map((post) => (
                 <div
                   key={post.id}
@@ -201,20 +217,20 @@ const BlogSection: React.FC = () => {
                   <Image
                     src={post.image}
                     alt={post.title}
-                    width={120}
-                    height={120}
-                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-md object-cover"
+                    width={110}
+                    height={110}
+                    className="w-20 h-20 sm:w-32 sm:h-24 md:w-48 md:h-32 rounded-md object-cover"
                   />
                   <div className="flex-1">
-                    <h4 className="  font-bold font-commissioner text-[#06685F] text-xs sm:text-sm md:text-base  line-clamp-2">
+                    <h4 className="font-bold font-commissioner text-[#06685F] text-xs sm:text-sm md:text-base line-clamp-2">
                       {post.title}
                     </h4>
-                    <p className="text-gray-500 text-xs mt-1 sm:mt-2">
+                    <p className="text-gray-500 text-xs mt-2 sm:mt-3">
                       📅 April 19, 2024   |   📝 No Comments
                     </p>
                     <button
                       onClick={() => setSelectedPost(post.id)}
-                      className="text-[#06685F] text-xs font-semibold hover:underline transition-colors duration-200"
+                      className="text-[#06685F] text-sm font-semibold hover:underline transition-colors duration-200 mt-2 sm:mt-3"
                     >
                       Read More
                     </button>
