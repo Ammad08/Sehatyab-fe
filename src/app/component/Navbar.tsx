@@ -14,10 +14,10 @@ const NavBar: React.FC = () => {
   const navLinks = [
     { href: "/", label: "HOME" },
     { href: "/about", label: "ABOUT US" },
-    { href: "/services", label: "OUR SERVICES +", isButton: true },
+    { href: "/services", label: "OUR SERVICES +"},
     { href: "/appointment", label: "BOOK APPOINTMENT" },
-    { href: "/resources", label: "RESOURCES +", isButton: true },
-    { href: "/institutional", label: "INSTITUTIONAL" },
+    // { href: "/resources", label: "RESOURCES +", isButton: true },
+    // { href: "/institutional", label: "INSTITUTIONAL" },
     { href: "/blog", label: "BLOG" }, // Added Blog link
     { href: "/contact", label: "CONTACT US +" },
   ];
