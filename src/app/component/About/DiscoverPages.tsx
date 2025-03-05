@@ -7,7 +7,7 @@ const DiscoverPages: React.FC = () => {
             <div className="max-w-7xl mx-auto flex flex-col  justify-center gap-4 items-center space-y-6 sm:space-y-0 px-4 sm:px-6">
 
                 {/* Left Text Section */}
-                <h1 className="text-xl sm:text-2xl flex md:text-3xl gap-2 font-bold font-openSans text-[#1DA678] text-center justify-center items-center leading-tight">
+                <h1 className="text-xl sm:text-2xl md:text-3xl flex  gap-2 font-bold font-openSans text-[#1DA678] text-center justify-center items-center leading-tight">
                     <span className="text-black">Discover Our Services</span>
                     <span className="hidden sm:block" > & What We Offer </span>
                 </h1>

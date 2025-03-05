@@ -1,7 +1,7 @@
 import React from "react";
-import DoctorList from "../component/Home/DoctorList";
-import DoctorsPage from "../component/Home/Doctor";
-import ConsultantSearchBar from "../component/Home/ConsultantSearchBar";
+import DoctorList from "../component/Appointment/DoctorList";
+import DoctorsPage from "../component/Appointment/Doctor";
+import ConsultantSearchBar from "../component/Appointment/ConsultantSearchBar";
 import { Suspense } from "react";
 
 const page = () => {

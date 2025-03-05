@@ -64,15 +64,15 @@ const Footer: React.FC = () => {
       initial="hidden"
       animate="visible"
       variants={footerVariants}
-      className="bg-gradient-to-r from-[#1DA678] to-[#14795F] text-white py-6 md:py-10 px-6 sm:px-12"
+      className="bg-[#1DA678] text-white  px-6 sm:px-12"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8 px-4 md:px-14 md:py-6">
+      <div className="max-w-6xl mx-auto py-6 md:py-10 flex flex-col lg:flex-row gap-6 lg:gap-20 px-4 ">
         {/* About Section */}
         <motion.div
           variants={footerVariants}
-          className="space-y-4 mt-4 col-span-1 sm:col-span-2"
+          className="space-y-4 mt-4 col-span-1 sm:col-span-2 w-full lg:w-[35%]"
         >
-          <p className="text-md font-bold text-white/80">
+          <p className="text-md font-bold text-white/80 text-justify lg:text-start">
             {footerData.about.description}
           </p>
           <div className="flex space-x-3">
@@ -88,105 +88,107 @@ const Footer: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Quick Links */}
-        <motion.div variants={footerVariants} className="space-y-3 text-left">
-          <h3 className="font-bold text-xl text-white">Quick Links</h3>
-          <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
-          <ul className="space-y-4 mt-4">
-            {footerData.quickLinks.map(({ name, path }) => (
-              <motion.li
-                key={path}
-                variants={footerVariants}
-                whileHover={{ x: 5 }}
-                className="flex items-center space-x-2"
-              >
-                <svg
-                  className="w-4 h-4 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+        <div className="grid md:grid-cols-3 justify-between gap-8 md:gap-14 lg:gap-10 w-full lg:w-[65%]">
+          {/* Quick Links */}
+          <motion.div variants={footerVariants} className="space-y-3 text-left">
+            <h3 className="font-bold text-xl text-white">Quick Links</h3>
+            <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
+            <ul className="space-y-4 mt-4">
+              {footerData.quickLinks.map(({ name, path }) => (
+                <motion.li
+                  key={path}
+                  variants={footerVariants}
+                  whileHover={{ x: 5 }}
+                  className="flex items-center space-x-2"
                 >
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
-                <Link href={path}>
-                  <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
-                    {name}
-                  </span>
-                </Link>
-              </motion.li>
-            ))}
-          </ul>
-        </motion.div>
+                  <svg
+                    className="w-4 h-4 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                  <Link href={path}>
+                    <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
+                      {name}
+                    </span>
+                  </Link>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
 
-        {/* Service Links */}
-        <motion.div variants={footerVariants} className="space-y-3 text-left">
-          <h3 className="font-bold text-xl text-white">Service Links</h3>
-          <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
-          <ul className="space-y-4 mt-4">
-            {footerData.serviceLinks.map(({ name, path }) => (
-              <motion.li
-                key={path}
-                variants={footerVariants}
-                whileHover={{ x: 5 }}
-                className="flex items-center space-x-2"
-              >
-                <svg
-                  className="w-4 h-4 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
+          {/* Service Links */}
+          <motion.div variants={footerVariants} className="space-y-3 text-left">
+            <h3 className="font-bold text-xl text-white">Service Links</h3>
+            <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
+            <ul className="space-y-4 mt-4">
+              {footerData.serviceLinks.map(({ name, path }) => (
+                <motion.li
+                  key={path}
+                  variants={footerVariants}
+                  whileHover={{ x: 5 }}
+                  className="flex items-center space-x-2"
                 >
-                  <path d="M9 18l6-6-6-6" />
-                </svg>
-                <Link href={path}>
-                  <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
-                    {name}
-                  </span>
-                </Link>
-              </motion.li>
-            ))}
-          </ul>
-        </motion.div>
+                  <svg
+                    className="w-4 h-4 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                  <Link href={path}>
+                    <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
+                      {name}
+                    </span>
+                  </Link>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
 
-        {/* Contact Section */}
-        <motion.div variants={footerVariants} className="space-y-3 text-left">
-          <h3 className="font-bold text-xl text-white">Let’s Get In Touch</h3>
-          <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
-          <p className="text-sm font-bold text-white/80">
-            {footerData.contact.hours}
-          </p>
-          <p className="flex items-center space-x-2">
-            <FaMapMarkerAlt className="text-yellow-400" />
-            <span className="text-sm font-bold text-white/80">
-              {footerData.contact.address}
-            </span>
-          </p>
-          <p className="flex items-center space-x-2">
-            <FaEnvelope className="text-yellow-400" />
-            <span className="text-sm font-bold text-white/80">
-              {footerData.contact.email}
-            </span>
-          </p>
-          <p className="flex items-center space-x-2">
-            <FaPhoneAlt className="text-yellow-400" />
-            <span className="text-sm font-bold text-white/80">
-              {footerData.contact.phone}
-            </span>
-          </p>
-        </motion.div>
+          {/* Contact Section */}
+          <motion.div variants={footerVariants} className="space-y-3 text-left">
+            <h3 className="font-bold text-xl text-nowrap text-white">Let’s Get In Touch</h3>
+            <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
+            <p className="text-sm font-bold text-white/80">
+              {footerData.contact.hours}
+            </p>
+            <p className="flex items-center space-x-2">
+              <FaMapMarkerAlt className="text-yellow-400" />
+              <span className="text-sm font-bold text-white/80">
+                {footerData.contact.address}
+              </span>
+            </p>
+            <p className="flex items-center space-x-2">
+              <FaEnvelope className="text-yellow-400" />
+              <span className="text-sm font-bold text-white/80">
+                {footerData.contact.email}
+              </span>
+            </p>
+            <p className="flex items-center space-x-2">
+              <FaPhoneAlt className="text-yellow-400" />
+              <span className="text-sm font-bold text-white/80">
+                {footerData.contact.phone}
+              </span>
+            </p>
+          </motion.div>
+        </div>
       </div>
 
       {/* Bottom Footer */}
       <motion.div
         variants={footerVariants}
-        className="border-t border-white/20 mt-6 pt-4 flex flex-col md:flex-row justify-between items-center px-4 md:px-14 text-sm"
+        className="border-t border-white/20 mt-6 py-4 flex flex-col md:flex-row justify-between items-center px-0 md:px-14 text-sm"
       >
-        <p className="text-sm font-bold text-white/80">
+        <p className="text-xs lg:text-sm font-bold text-white/80">
           © 2025 - All Rights Reserved by Health
         </p>
         <div className="flex flex-wrap justify-center md:justify-start space-x-4 mt-3 md:mt-0">
           {footerData.bottomLinks.map(({ name, path }, index) => (
             <Link key={name} href={path}>
               <span
-                className={`hover:underline text-sm font-bold text-white/80 ${
+                className={`hover:underline text-xs lg:text-sm font-bold text-white/80 ${
                   index < footerData.bottomLinks.length - 1
                     ? "border-r pr-4"
                     : ""
