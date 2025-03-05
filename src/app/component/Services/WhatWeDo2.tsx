@@ -3,7 +3,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { TiTick } from "react-icons/ti";
 import Link from "next/link";
 
 const WhatWeDo2 = () => {
