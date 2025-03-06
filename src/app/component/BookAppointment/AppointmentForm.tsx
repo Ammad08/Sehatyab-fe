@@ -2,6 +2,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import Image from "next/image";
 
 export default function AppointmentForm() {
   const searchParams = useSearchParams();
@@ -186,10 +187,11 @@ export default function AppointmentForm() {
           <div className="flex items-center justify-between gap-8 bg-[rgba(247,247,247,1)] text-sm w-fit border px-3 py-1.5 rounded-md space-x-3">
             <div className="flex items-center space-x-2">
               <input type="checkbox" required className="w-4 h-4 border" />
-              <span className="text-gray-900">I'm not a robot</span>
+              <span className="text-gray-900">I am not a robot</span>
             </div>
             <div className="flex flex-col items-center justify-center text-[rgba(85,85,85,1)] pt-2">
-              <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" className="h-4 w-10" />
+              {/* <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" className="h-4 w-10" /> */}
+              <Image alt="Captcha" src="/Appointment/Image.png" width={30} height={10}></Image>
               <p className="text-xs">reCAPTCHA</p>
               <p className="text-xs">privacy - terms</p>
             </div>
