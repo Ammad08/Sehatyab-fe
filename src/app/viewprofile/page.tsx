@@ -1,11 +1,14 @@
 import React from 'react'
 import ViewProfile from '../component/ViewProfile'
+import { Suspense } from "react";
 
 const page = () => {
   return (
-    <div>
+          <Suspense fallback={<div>Loading...</div>}>
+    
       <ViewProfile/>
-    </div>
+          </Suspense>
+    
   )
 }
 
