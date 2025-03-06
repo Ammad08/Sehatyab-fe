@@ -14,10 +14,10 @@ const NavBar: React.FC = () => {
   const navLinks = [
     { href: "/", label: "HOME" },
     { href: "/about", label: "ABOUT US" },
-    { href: "/services", label: "OUR SERVICES +" },
+    { href: "/services", label: "OUR SERVICES" },
     { href: "/appointment", label: "BOOK APPOINTMENT" },
     { href: "/blog", label: "BLOG" },
-    { href: "/contact", label: "CONTACT US +" },
+    { href: "/contact", label: "CONTACT US" },
   ];
 
   const NavLink = ({
@@ -33,7 +33,7 @@ const NavBar: React.FC = () => {
   }) => {
     const isActive = pathname === href;
     const className = `hover:text-[#FFBC0A] transition duration-300 ${
-      isActive ? "text-[#FFBC0A] underline font-bold" : ""
+      isActive ? "text-[#FFBC0A]  font-bold" : ""
     }`;
 
     return isButton ? (

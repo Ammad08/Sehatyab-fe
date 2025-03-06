@@ -23,7 +23,7 @@ const footerData = {
   quickLinks: [
     { name: "Homepage", path: "/" },
     { name: "About Us", path: "/about" },
-    { name: "Our Specialist", path: "/specialist" },
+    { name: "Our Specialist", path: "/appointment" },
     { name: "Our Services", path: "/services" },
     { name: "Our Pricing", path: "/pricing" },
   ],

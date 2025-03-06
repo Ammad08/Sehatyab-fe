@@ -21,7 +21,7 @@ const DoctorsPage = () => {
           HOME
         </Link>
         <span className="font-bold">{">"}</span>
-        <Link href="/doctors" className="hover:text-[rgba(24,77,81,1)]">
+        <Link href="/appointment" className="hover:text-[rgba(24,77,81,1)]">
           DOCTORS
         </Link>
         <span className="font-bold">{">"}</span>
