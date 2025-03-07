@@ -70,7 +70,7 @@ export default function AppointmentForm() {
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 md:py-10">
-      <div className="shadow- p-8 rounded-lg md:px-12 max-w-6xl lg:max-w-7xl">
+      <div className="shadow- py-8 px-4 rounded-lg md:px-12 max-w-6xl lg:max-w-7xl">
         <p className="text-[rgba(85,85,85,1)] mb-4 text-left text-sm">
           To request an appointment, please fill out the following form. Please provide your preferred date and time for the appointment. Our team will review your
           request and contact you to confirm the appointment based on the availability of our doctors.
