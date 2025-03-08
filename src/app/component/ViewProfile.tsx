@@ -1827,7 +1827,7 @@ const ViewProfile: React.FC = () => {
             </div>
 
             <div className="mt- text-center">
-              <Link href="/appointment">
+              <Link href="/bookAppointment">
               <button className="w-full flex items-center justify-center space-x-2 border border-[rgba(255,188,10,1)] text-[rgba(255,188,10,1)] font-bold font-inter py-2 rounded-full hover:bg-green-50 transition">
                 <span>Book Appointment</span>
               </button>

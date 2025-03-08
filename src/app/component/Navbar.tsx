@@ -53,8 +53,8 @@ const NavBar: React.FC = () => {
           <Image
             src="/Home/Logo.png"
             alt="Logo"
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             priority
           />
         </div>
@@ -70,12 +70,12 @@ const NavBar: React.FC = () => {
 
         {/* Search & Login */}
         <div className="hidden lg:flex items-center space-x-6">
-          <Link
+          {/* <Link
             href="/login"
             className="hover:text-[#FFBC0A] transition text-white font-semibold text-sm"
           >
             LOGIN
-          </Link>
+          </Link> */}
           <FaSearch className="text-white cursor-pointer hover:opacity-80 transition text-lg" />
         </div>
 
@@ -107,14 +107,14 @@ const NavBar: React.FC = () => {
             onClick={() => setIsOpen(false)}
           />
         ))}
-        <Link
+        {/* <Link
           href="/login"
           className="hover:text-[#FFBC0A] transition font-semibold text-sm"
           onClick={() => setIsOpen(false)}
         >
           LOGIN
         </Link>
-        <FaSearch className="cursor-pointer hover:opacity-80 transition text-xl" />
+        <FaSearch className="cursor-pointer hover:opacity-80 transition text-xl" /> */}
       </div>
     </nav>
   );

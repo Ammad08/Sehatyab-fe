@@ -17,22 +17,23 @@ import { motion } from "framer-motion";
 const footerData = {
   about: {
     description:
-      "Providing trusted healthcare solutions with excellence. Dedicated to your well-being, we ensure compassionate care and innovative medical services.",
+      "Providing trusted healthcare solutions with excellence. Dedicated to your well-being, we ensure  care and innovative medical services. Our team of experienced professionals is committed to delivering personalized treatment, utilizing cutting-edge technology and evidence-based practices.With a patient-first approach, we strive to enhance quality of life through preventive care, accurate diagnoses, and effective treatments.  ",
     socialIcons: [FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn],
   },
   quickLinks: [
     { name: "Homepage", path: "/" },
     { name: "About Us", path: "/about" },
+    { name: "Contact Us", path: "/contact" },
+
     { name: "Our Specialist", path: "/appointment" },
     { name: "Our Services", path: "/services" },
-    { name: "Our Pricing", path: "/pricing" },
   ],
-  serviceLinks: [
-    { name: "Mental Health", path: "/mental-health" },
-    { name: "Childhood", path: "/childhood" },
-    { name: "Adult Mentals", path: "/adult-mentals" },
-    { name: "Wife Mental", path: "/wife-mental" },
-    { name: "Old Consultant", path: "/old-consultant" },
+  importantLinks: [
+    { name: "Terms and Conditions", path: "/TermsAndConditions" },
+    { name: "FAQs", path: "/FAQs" },
+    { name: "Privacy Policy", path: "/PrivacyPolicy" },
+    { name: "Blog", path: "/blog" },
+    { name: "Overview", path: "/about" },
   ],
   contact: {
     hours: "Open All Day 08:00 AM – 08:00 PM or custom time",
@@ -72,7 +73,7 @@ const Footer: React.FC = () => {
           variants={footerVariants}
           className="space-y-4 mt-4 col-span-1 sm:col-span-2 w-full lg:w-[35%]"
         >
-          <p className="text-md font-bold text-white/80 text-justify lg:text-start">
+          <p className="text-sm font-bold text-white/80 text-justify md:pt-6 lg:text-start">
             {footerData.about.description}
           </p>
           <div className="flex space-x-3">
@@ -88,7 +89,37 @@ const Footer: React.FC = () => {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 justify-between gap-8 md:gap-14 lg:gap-10 w-full lg:w-[65%]">
+        <div className="grid md:grid-cols-3 justify-between gap-8  md:gap-10 lg:gap-10 w-full lg:w-[65%]">
+          
+             {/* Service Links */}
+             <motion.div variants={footerVariants} className="space-y-3 text-left">
+            <h3 className="font-bold text-xl whitespace-nowrap text-white">Important Links</h3>
+            <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
+            <ul className="space-y-4 mt-4">
+              {footerData.importantLinks.map(({ name, path }) => (
+                <motion.li
+                  key={path}
+                  variants={footerVariants}
+                  whileHover={{ x: 5 }}
+                  className="flex items-center space-x-2"
+                >
+                  <svg
+                    className="w-4 h-4 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M9 18l6-6-6-6" />
+                  </svg>
+                  <Link href={path}>
+                    <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
+                      {name}
+                    </span>
+                  </Link>
+                </motion.li>
+              ))}
+            </ul>
+          </motion.div>
+          
           {/* Quick Links */}
           <motion.div variants={footerVariants} className="space-y-3 text-left">
             <h3 className="font-bold text-xl text-white">Quick Links</h3>
@@ -118,37 +149,10 @@ const Footer: React.FC = () => {
             </ul>
           </motion.div>
 
-          {/* Service Links */}
-          <motion.div variants={footerVariants} className="space-y-3 text-left">
-            <h3 className="font-bold text-xl text-white">Service Links</h3>
-            <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
-            <ul className="space-y-4 mt-4">
-              {footerData.serviceLinks.map(({ name, path }) => (
-                <motion.li
-                  key={path}
-                  variants={footerVariants}
-                  whileHover={{ x: 5 }}
-                  className="flex items-center space-x-2"
-                >
-                  <svg
-                    className="w-4 h-4 text-yellow-400"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M9 18l6-6-6-6" />
-                  </svg>
-                  <Link href={path}>
-                    <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
-                      {name}
-                    </span>
-                  </Link>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
+       
 
           {/* Contact Section */}
-          <motion.div variants={footerVariants} className="space-y-3 text-left">
+          <motion.div variants={footerVariants} className="space-y-3 text-left mr-4">
             <h3 className="font-bold text-xl text-nowrap text-white">Let’s Get In Touch</h3>
             <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
             <p className="text-sm font-bold text-white/80">
