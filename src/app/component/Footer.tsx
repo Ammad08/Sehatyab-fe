@@ -183,7 +183,7 @@ const Footer: React.FC = () => {
       {/* Bottom Footer */}
       <motion.div
         variants={footerVariants}
-        className="border-t border-white/20 mt-6 py-4 flex flex-col md:flex-row justify-between items-center px-0 md:px-14 text-sm"
+        className="border-t max-w-6xl mx-auto border-white/20 mt-6  py-4 flex flex-col md:flex-row justify-between items-center px-2 text-sm"
       >
         <p className="text-xs lg:text-sm font-bold text-white/80">
           © 2025 - All Rights Reserved by Health

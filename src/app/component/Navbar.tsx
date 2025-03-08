@@ -47,14 +47,14 @@ const NavBar: React.FC = () => {
 
   return (
     <nav className="bg-[#1DA678] px-6 xl:px-20 flex items-center z-50 shadow-lg relative">
-      <main className="max-w-7xl w-full mx-auto flex justify-between items-center">
+      <main className="max-w-7xl md:px-16 w-full mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center py-2">
           <Image
             src="/Home/Logo.png"
             alt="Logo"
             width={60}
-            height={60}
+            height={100}
             priority
           />
         </div>
