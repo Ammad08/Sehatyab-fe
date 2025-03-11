@@ -94,9 +94,14 @@ const Appointment = () => {
                 required
               >
                 <option value="">Services</option>
-                <option value="General Consultation">General Consultation</option>
-                <option value="Dental Checkup">Dental Checkup</option>
-                <option value="Skin Care">Skin Care</option>
+                <option value="General Consultation">Cardiology</option>
+                <option value="Dental Checkup">Neurology</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Skin Care">Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist"</option>
+                <option value="Pediatric Gastroenterologist">Pediatric Gastroenterologist</option>
+                <option value="Pediatric Gastroenterologist">Pediatric Gastroenterologist</option>
+                <option value="General Physician, Internal Medicine">General Physician, Internal Medicine</option>
+
               </select>
             </div>
             <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">

@@ -5,24 +5,24 @@ import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const consultants = [
   {
-    name: "Dr. John Doe PhD",
+    name: "Dr. Raman Kumar",
     specialty: "Neurologist",
-    image: "/Home/Doc1.png",
+    image: "/Appointment/Doc1.jpg",
   },
   {
-    name: "Dr. David Wilson MD",
+    name: "Dr. Arit Parkash",
     specialty: "Dermatologist",
-    image: "/Home/Doc2.png",
+    image: "/Appointment/Doc2.jpg",
   },
   {
-    name: "Dr. Sebastian Junn",
+    name: "Dr. Naveen Manzoor",
     specialty: "Dental Specialist",
-    image: "/Home/Doc3.png",
+    image: "/Appointment/Doc3.jpg",
   },
   {
-    name: "Dr. Goe Bloggs",
-    specialty: "Henri Specialist",
-    image: "/Home/Doc4.png",
+    name: "Assist. Professor Dr. Faisal Zafar",
+    specialty: "Pediatric Neurologist",
+    image: "/Appointment/Doc4.jpg",
   },
 ];
 
@@ -77,7 +77,7 @@ export default function OurConsultants() {
               </div>
 
               {/* Social Links */}
-              <div className="absolute top-4 right-4 flex flex-col space-y-2 z-10">
+              {/* <div className="absolute top-4 right-4 flex flex-col space-y-2 z-10">
                 <a
                   href="#"
                   className="bg-[rgba(29,166,120,1)] text-white p-2 rounded-full hover:bg-[#047857] transition"
@@ -96,7 +96,7 @@ export default function OurConsultants() {
                 >
                   <FaLinkedinIn />
                 </a>
-              </div>
+              </div> */}
 
               {/* Content Positioned at Bottom */}
               <div className="absolute m-3 bottom-0 left-0 right-0 p-3 sm:p-4 bg-[rgba(29,166,120,0.9)] text-white rounded-xl">

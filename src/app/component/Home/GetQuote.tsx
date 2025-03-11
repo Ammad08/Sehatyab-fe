@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -13,16 +14,18 @@ const GetQuote: React.FC = () => {
 
         {/* Right Section (Button and Phone) */}
         <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-          <button className="bg-[rgba(29,166,120,1)] text-white px-5 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
-            Get a Quote
+         <Link href="/contact">
+          <button className="bg-[rgba(29,166,120,1)] text-white text-lg px-5 py-2 rounded-lg font-semibold hover:bg-green-700 transition">
+            Contact us
           </button>
+          </Link>
 
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <FaPhoneAlt className="text-black text-lg" />
-            <span className="text-[#FFBC0A] font-semibold  tracking-wider font-commissioner text-lg">
+            <span className=" font-semibold  tracking-wider font-commissioner text-lg">
               (877)-555-6666
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

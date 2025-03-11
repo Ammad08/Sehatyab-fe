@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import {
   FaFacebookF,
@@ -21,7 +22,7 @@ const footerData = {
     socialIcons: [FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn],
   },
   quickLinks: [
-    { name: "Homepage", path: "/" },
+    { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Contact Us", path: "/contact" },
 
@@ -68,12 +69,26 @@ const Footer: React.FC = () => {
       className="bg-[#1DA678] text-white  px-6 sm:px-12"
     >
       <div className="max-w-6xl mx-auto py-6 md:py-10 flex flex-col lg:flex-row gap-6 lg:gap-20 px-4 ">
+     
         {/* About Section */}
         <motion.div
           variants={footerVariants}
           className="space-y-4 mt-4 col-span-1 sm:col-span-2 w-full lg:w-[35%]"
         >
-          <p className="text-sm font-bold text-white/80 text-justify md:pt-6 lg:text-start">
+             {/* Logo */}
+        <div className="flex items-center justify-center  md:pr-4  ">
+          <Link href="/">
+          <Image
+            src="/Home/Logo02.svg"
+            alt="Logo"
+            width={180}
+            height={100}
+            priority
+            className=""
+          />
+          </Link>
+        </div>
+          <p className="text-sm font- text-white p-1 text-justify  lg:text-start">
             {footerData.about.description}
           </p>
           <div className="flex space-x-3">
@@ -111,7 +126,7 @@ const Footer: React.FC = () => {
                     <path d="M9 18l6-6-6-6" />
                   </svg>
                   <Link href={path}>
-                    <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
+                    <span className="hover:underline text-sm font- text-white cursor-pointer">
                       {name}
                     </span>
                   </Link>
@@ -140,7 +155,7 @@ const Footer: React.FC = () => {
                     <path d="M9 18l6-6-6-6" />
                   </svg>
                   <Link href={path}>
-                    <span className="hover:underline text-sm font-bold text-white/80 cursor-pointer">
+                    <span className="hover:underline text-sm font- text-white cursor-pointer">
                       {name}
                     </span>
                   </Link>
@@ -155,7 +170,7 @@ const Footer: React.FC = () => {
           <motion.div variants={footerVariants} className="space-y-3 text-left mr-4">
             <h3 className="font-bold text-xl text-nowrap text-white">Let’s Get In Touch</h3>
             <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
-            <p className="text-sm font-bold text-white/80">
+            <p className="text-sm font- text-white">
               {footerData.contact.hours}
             </p>
             <p className="flex items-center space-x-2">

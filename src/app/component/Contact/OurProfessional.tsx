@@ -17,7 +17,7 @@ const OurProfessional: React.FC = () => {
             {/* Contact Info Section */}
             <div className="grid md:grid-cols-3 gap-8 mt-12 w-full px-4">
                 {/* Office Address */}
-                <div className="p-8 flex flex-col items-center bg-white  hover:shadow-xl transition-all duration-300">
+                <div className="p-8 flex flex-col items-center bg-[#06685F]  hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Office.svg"
                         alt="Office Location"
@@ -26,14 +26,14 @@ const OurProfessional: React.FC = () => {
                         priority
                         className="animate-bounce"
                     />
-                    <h3 className="text-lg font-bold font-commissioner mt-6 text-[#06685F]">Our Office</h3>
-                    <p className="text-[#6E6E6E] text-sm font-commissioner mt-2 text-center">
+                    <h3 className="text-lg font-bold font-commissioner mt-6 text-white">Our Office</h3>
+                    <p className="text-gray-200 text-sm font-commissioner mt-2 text-center">
                         123 Main Street, Suite 101, Cityville
                     </p>
                 </div>
 
                 {/* Email Box */}
-                <div className="p-8 flex flex-col items-center bg-gradient-to-r from-white via-[rgba(29,166,120,0.3)] to-white  hover:shadow-xl transition-all duration-300">
+                <div className="p-8 flex flex-col items-center bg-[#06685F]  hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Email.svg"
                         alt="Email Official"
@@ -42,14 +42,14 @@ const OurProfessional: React.FC = () => {
                         priority
                         className="animate-bounce"
                     />
-                    <h3 className="text-lg font-bold mt-6 font-commissioner text-[#06685F]">Email Official</h3>
-                    <p className="text-[#6E6E6E] font-commissioner text-sm mt-2 text-center">
+                    <h3 className="text-lg font-bold mt-6 font-commissioner text-[white]">Email Official</h3>
+                    <p className="text-gray-200 font-commissioner text-sm mt-2 text-center">
                         info@domain.com
                     </p>
                 </div>
 
                 {/* Telephone */}
-                <div className="p-8 flex flex-col items-center bg-white   hover:shadow-xl transition-all duration-300">
+                <div className="p-8 flex flex-col items-center bg-[#06685F]   hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Telephone.svg"
                         alt="Telephone"
@@ -58,8 +58,8 @@ const OurProfessional: React.FC = () => {
                         priority
                         className="animate-bounce"
                     />
-                    <h3 className="text-lg font-bold mt-6 font-commissioner text-[#06685F]">Telephone</h3>
-                    <p className="text-[#6E6E6E] font-commissioner text-sm mt-2 text-center">
+                    <h3 className="text-lg font-bold mt-6 font-commissioner text-[white]">Telephone</h3>
+                    <p className="text-gray-200 font-commissioner text-sm mt-2 text-center">
                         (877)-555-6666
                     </p>
                 </div>

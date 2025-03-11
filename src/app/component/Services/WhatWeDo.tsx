@@ -72,15 +72,15 @@ const WhatWeDo = () => {
               <h1 className="text-[#06685F] font-bold text-lg my-4">
                 Other illnesses
               </h1>
-              <ul className="text-[#6E6E6E] space-y-1 text-xs mt-2">
-                <li>⦿ Obsessive-compulsive disorder</li>
-                <li>⦿ Panic Attacks</li>
-                <li>⦿ Bipolar Disorder</li>
-                <li>⦿ PTSD</li>
-                <li>⦿ Social anxiety disorder</li>
-                <li>⦿ Schizophrenia</li>
-                <li>⦿ Eating Disorders</li>
-                <li>⦿ Borderline Personality Disorder</li>
+              <ul className="text-[#6E6E6E] space-y-1 text-xs mt-2 whitespace-nowrap">
+                <li>✔ Obsessive-compulsive disorder</li>
+                <li>✔ Panic Attacks</li>
+                <li>✔ Bipolar Disorder</li>
+                <li>✔ PTSD</li>
+                <li>✔ Social anxiety disorder</li>
+                <li>✔ Schizophrenia</li>
+                <li>✔ Eating Disorders</li>
+                <li>✔ Borderline Personality Disorder</li>
               </ul>
             </div>
           </div>
@@ -99,7 +99,7 @@ const WhatWeDo = () => {
             alt="Psychiatrist with patient"
             width={450}
             height={350}
-            className="w-full lg:w-[380px] xl:w-[full] max-w-[450px] object-cover"
+            className="w-full lg:w-[380px] xl:w-[full] max-w-[400px] object-cover"
           />
           <div className="absolute flex flex-col h-fit sm:top-auto md:top-60 lg:top-40 xl:right-0 right-4 bg-white py-6 px-5 shadow-xl rounded-lg border-l-8 border-[#06685F] md:w-56 w-[90%] transition-transform duration-500 ease-in-out hover:scale-105">
             <h3 className="text-lg font-bold text-gray-900 mt-2">
