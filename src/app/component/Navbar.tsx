@@ -49,14 +49,16 @@ const NavBar: React.FC = () => {
     <nav className="bg-[#1DA678] px-6 xl:px-20 flex items-center z-50 shadow-lg relative">
       <main className="max-w-7xl md:px-16 w-full mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center py-2">
+        <div className="flex items-center p-2 ">
+          <Link href="/">
           <Image
-            src="/Home/Logo.png"
+            src="/Home/Logo02.svg"
             alt="Logo"
-            width={60}
+            width={180}
             height={100}
             priority
           />
+          </Link>
         </div>
 
         {/* Desktop Nav Links */}

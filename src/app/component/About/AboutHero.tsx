@@ -29,13 +29,13 @@ const AboutHero = () => {
                         </p>
 
                         {/* Google Rating */}
-                        <div className="flex  items-center gap-4 ">
+                        {/* <div className="flex  items-center gap-4 ">
                             <Image src="/Home/Google.svg" alt="Google" width={40} height={40} />
                             <div>
                                 <p className="font-semibold text-white font-poppins text-lg">4.8 Google Rating</p>
                                 <p className="text-gray-100 font-poppins text-sm">Trusted by thousands</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
             </div>

@@ -107,17 +107,18 @@ const ServicesForKids: React.FC = () => {
               </ul>
             </motion.div>
           ))}
+          
         </div>
 
-        <div className="text-center mt-12">
-          <Link href="/appointment">
+        <div className="text-center ">
+          <Link href="/services">
             <motion.button
-              className="font-commissioner font-bold bg-[#FFBC0A] hover:shadow-lg shadow-gray-400 hover:shadow-gray-500 shadow-md text-white py-3 px-6 rounded-sm transition duration-500"
+              className="font-commissioner font-bold bg-[#FFBC0A] hover:shadow-lg shadow-gray-400 hover:shadow-gray-500 shadow-md text-white py-3 px-8 rounded-sm transition duration-500"
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.95 }}
               aria-label="Book an appointment"
             >
-              Book Appointment
+              Our Services
             </motion.button>
           </Link>
         </div>

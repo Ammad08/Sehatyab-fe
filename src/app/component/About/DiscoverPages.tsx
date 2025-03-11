@@ -14,10 +14,10 @@ const DiscoverPages: React.FC = () => {
 
                 {/* Right Section (Button and Phone) */}
                 <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
-<Link href="/appointment">
+<Link href="/services">
                    
                     <button className="bg-[rgba(29,166,120,1)] text-white px-5 py-2 font-poppins  font-semibold hover:bg-green-700 transition">
-                        Book Appointment
+                        Our Services
                     </button>
                     </Link>
 

@@ -35,7 +35,7 @@ const BlogHero = () => {
             </p>
 
             {/* Google Rating */}
-            <div className="flex  items-center gap-4 ">
+            {/* <div className="flex  items-center gap-4 ">
               <Image
                 src="/Home/Google.svg"
                 alt="Google"
@@ -50,7 +50,7 @@ const BlogHero = () => {
                   Trusted by thousands
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </div>
