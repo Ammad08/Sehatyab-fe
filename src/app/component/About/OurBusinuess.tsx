@@ -22,7 +22,7 @@ const OurBusiness = () => {
                     {/* Image & Extra Text */}
                     <div className="mt-6 flex flex-col sm:flex-row gap-5 items-start">
                         <Image
-                            src="/About/OurBusiness.svg"
+                            src="/About/OurBusiness2.jpg"
                             alt="Psychiatrist with patient"
                             width={180}
                             height={120}

@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
           className="space-y-4  col-span-1 sm:col-span-2 w-full lg:w-[35%]"
         >
              {/* Logo */}
-        <div className="flex items-center justify-center  md:pr-4  ">
+        <div className="flex items-center justify-  md:pr-4  ">
           <Link href="/">
           <Image
             src="/Home/Logo02.svg"

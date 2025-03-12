@@ -13,7 +13,7 @@ const WhoWeAre = () => {
                 {/* Left Section - Image & Overlay */}
                 <section className="relative justify-center lg:justify-start flex">
                     <Image
-                        src="/About/WhoWeAre.svg"
+                        src="/About/WhoWeAre3.jpg"
                         alt="Psychiatrist with patient"
                         width={450}
                         height={350}
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
 
                     <blockquote className="border-l-4 font-commissioner border-[#1DA678] pl-5 text-gray-700 mt-6 text-lg italic">
                         Your mental health is our priority. Healing through understanding and expert guidance.
-                        <p className="text-[#06685F] font-commissioner font-bold mt-3 not-italic"> Dr. John Doe</p>
+                        <p className="text-[#06685F] font-commissioner font-bold mt-3 not-italic"> Dr. Muhammad Ather</p>
                     </blockquote>
 
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base xl:text-nowrap text-gray-700 mt-6">
