@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
         {/* About Section */}
         <motion.div
           variants={footerVariants}
-          className="space-y-4 mt-4 col-span-1 sm:col-span-2 w-full lg:w-[35%]"
+          className="space-y-4  col-span-1 sm:col-span-2 w-full lg:w-[35%]"
         >
              {/* Logo */}
         <div className="flex items-center justify-center  md:pr-4  ">
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
           />
           </Link>
         </div>
-          <p className="text-sm font- text-white p-1 text-justify  lg:text-start">
+          <p className="text-sm font- text-white px-1 text-justify  lg:text-start">
             {footerData.about.description}
           </p>
           <div className="flex space-x-3">
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 justify-between gap-8  md:gap-10 lg:gap-10 w-full lg:w-[65%]">
+        <div className="grid md:grid-cols-3 justify-between gap-8 py-4  md:gap-10 lg:gap-10 w-full lg:w-[65%]">
           
              {/* Service Links */}
              <motion.div variants={footerVariants} className="space-y-3 text-left">

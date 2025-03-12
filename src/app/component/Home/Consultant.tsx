@@ -1,7 +1,6 @@
 // pages/our-consultants.tsx
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const consultants = [
   {

@@ -58,14 +58,27 @@ export default function AppointmentForm() {
     "Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist",
     "Pediatric Gastroenterologist",
     "Pediatric Neurologist",
-    "General Physician, Internal Medicine"
+    "General Physician, Internal Medicine",
+    "Clinical Psychologist",
+    "Psychiatrist",
+    "Family Counselor, Relationship Counselor",
+    "Chief Medical Officer, Psychiatrist"
   ];
 
   const consultants = [
     "Dr. Raman Kumar",
     "Dr. Arit Parkash",
     "Assist. Professor Dr. Faisal Zafar",
-    "Dr. Naveen Manzoor"
+    "Dr. Naveen Manzoor",
+    "Ms. Maryam Khan",
+    "Prof. Dr. Ghulam Rasool",
+    "Ms. Sana Khan",
+    "Ms. Kalsoom Yasin",
+    "Ms. Sadia Irfan",
+    "Mr. Zahid Sohail",
+    "Dr. Muhammad Ather",
+    "Dr. Qurrat Ulain",
+
   ];
 
   return (
