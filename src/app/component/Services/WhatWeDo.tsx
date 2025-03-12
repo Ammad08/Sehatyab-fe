@@ -93,13 +93,13 @@ const WhatWeDo = () => {
         </section>
 
         {/* Right Section - Image & Overlay */}
-        <section className="relative flex justify-center lg:justify-start gap-6">
+        <section className="relative flex justify-center lg:justify-start gap-8">
           <Image
-            src="/Services/WhatWeDo.png"
+            src="/Services/WhatWeDo02.jpg"
             alt="Psychiatrist with patient"
             width={450}
             height={350}
-            className="w-full lg:w-[380px] xl:w-[full] max-w-[400px] object-cover"
+            className="w-full lg:w-[380px] xl:w-[full] max-w-[450px] object-cover"
           />
           <div className="absolute flex flex-col h-fit sm:top-auto md:top-60 lg:top-40 xl:right-0 right-4 bg-white py-6 px-5 shadow-xl rounded-lg border-l-8 border-[#06685F] md:w-56 w-[90%] transition-transform duration-500 ease-in-out hover:scale-105">
             <h3 className="text-lg font-bold text-gray-900 mt-2">

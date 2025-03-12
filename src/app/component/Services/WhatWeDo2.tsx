@@ -86,7 +86,7 @@ const WhatWeDo2 = () => {
               <h1 className="text-[#06685F] font-bold font-poppins text-lg mb-4">
                 Special children
               </h1>
-              <ul className="text-[#6E6E6E] space-y-2 text-sm">
+              <ul className="text-[#6E6E6E] space-y-2 text-sm whitespace-nowrap">
                 <li>⦿ Mental retardation</li>
                 <li>⦿ Gifted / talented children</li>
                 <li>⦿ Autism / Aspreger`s</li>

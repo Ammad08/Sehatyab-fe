@@ -15,7 +15,7 @@ const listItem = {
 
 const ServicesForKids: React.FC = () => {
   return (
-    <main className="bg-[#F7F7F7] p-4 md:p-12 flex flex-col justify-center items-center">
+    <main className="bg-[#F7F7F7]  p-4 md:p-12 flex flex-col justify-center items-center">
       <motion.section
         className="container max-w-6xl"
         initial="hidden"
@@ -40,7 +40,7 @@ const ServicesForKids: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-8  md:gap-20">
           {/* Card Component */}
           {[
             {

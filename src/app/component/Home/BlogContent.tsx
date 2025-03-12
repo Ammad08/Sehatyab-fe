@@ -1,5 +1,6 @@
 // components/BlogContent.jsx
 import Image from 'next/image';
+import Link from 'next/link';
 
 const BlogContent = () => {
   const blogs = [
@@ -58,12 +59,12 @@ const BlogContent = () => {
                 <p className="text-gray-600 mt-2 text-sm leading-relaxed">
                   {blog.description}
                 </p>
-                <a
-                  href="#"
+                <Link
+                  href="/blog"
                   className="inline-block mt-4 text-[rgba(255,188,10,1)] font-semibold text-sm hover:underline"
                 >
                   Read More »
-                </a>
+                </Link>
               </div>
             </div>
           ))}

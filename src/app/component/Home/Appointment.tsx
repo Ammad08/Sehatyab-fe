@@ -18,7 +18,7 @@ const Appointment = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
                 {/* <FaUser className="text-gray-500" /> */}
-                <img src="/Home/name.png" alt="" />
+                <img src="/Home/name.png" alt="" width={20} height={20} />
                 <input
                   type="text"
                   placeholder="Name"
@@ -28,7 +28,8 @@ const Appointment = () => {
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
                 {/* <FaEnvelope className="text-[rgba(29,166,120,1)]" /> */}
-                <img src="/Home/email.png" alt="" />
+                {/* <img src="/Home/email.png" alt="" /> */}
+                <img src="/Home/email.png" alt="" width={20} height={20} />
 
                 <input
                   type="email"
@@ -40,7 +41,8 @@ const Appointment = () => {
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
                 {/* <FaPhone className="text-gray-500" />
                  */}
-                <img src="/Home/phone.png" alt="" />
+                {/* <img src="/Home/phone.png" alt="" /> */}
+                <img src="/Home/phone.png" alt="" width={20} height={20} />
 
                 <input
                   type="tel"
@@ -51,7 +53,8 @@ const Appointment = () => {
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
                 {/* <FaCalendarAlt className="text-gray-500" /> */}
-                <img src="/Home/number.png" alt="" />
+                {/* <img src="/Home/number.png" alt="" /> */}
+                <img src="/Home/number.png" alt="" width={20} height={20} />
 
                 <input
                   type="number"
@@ -62,7 +65,8 @@ const Appointment = () => {
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
                 {/* <FaCalendarAlt className="text-gray-500" /> */}
-                <img src="/Home/date.png" alt="" />
+                {/* <img src="/Home/date.png" alt="" /> */}
+                <img src="/Home/date.png" alt="" width={20} height={20} />
 
                 <input
                   type="date"
@@ -72,7 +76,8 @@ const Appointment = () => {
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
                 {/* <FaVenusMars className="text-gray-500" /> */}
-                <img src="/Home/gender.png" alt="" />
+                {/* <img src="/Home/gender.png" alt="" /> */}
+                <img src="/Home/gender.png" alt="" width={20} height={20} />
 
                 <select
                   className="w-full outline-none bg-transparent text-gray-400"
@@ -87,7 +92,8 @@ const Appointment = () => {
             </div>
             <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
               {/* <FaClipboardList className="text-gray-500" /> */}
-              <img src="/Home/services.png" alt="" />
+              {/* <img src="/Home/services.png" alt="" /> */}
+              <img src="/Home/services.png" alt="" width={20} height={20} />
 
               <select
                 className="w-full outline-none bg-transparent text-gray-400"
@@ -97,7 +103,7 @@ const Appointment = () => {
                 <option value="General Consultation">Cardiology</option>
                 <option value="Dental Checkup">Neurology</option>
                 <option value="Dermatology">Dermatology</option>
-                <option value="Skin Care">Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist"</option>
+                <option value="Skin Care">Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist</option>
                 <option value="Pediatric Gastroenterologist">Pediatric Gastroenterologist</option>
                 <option value="Pediatric Gastroenterologist">Pediatric Gastroenterologist</option>
                 <option value="General Physician, Internal Medicine">General Physician, Internal Medicine</option>
@@ -106,7 +112,8 @@ const Appointment = () => {
             </div>
             <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
               {/* <FaClipboardList className="text-gray-500" /> */}
-              <img src="/Home/message.png" alt="" className="mb-6" />
+              {/* <img src="/Home/message.png" alt="" className="mb-6" /> */}
+              <img src="/Home/message.png" alt="" width={20} height={20} className="mb-6" />
 
               <textarea
                 placeholder="Message"
