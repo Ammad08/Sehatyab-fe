@@ -50,7 +50,7 @@ const OurProfessional: React.FC = () => {
                 </div>
 
                 {/* Telephone */}
-                <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,0.9)]   hover:shadow-xl transition-all duration-300">
+                <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)]   hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Telephone.svg"
                         alt="Telephone"
