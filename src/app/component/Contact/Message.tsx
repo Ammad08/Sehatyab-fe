@@ -109,7 +109,11 @@ const Message: React.FC = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5501/happy/contact/send", {
+      const apiUrl = process.env.NEXT_PUBLIC_CONTACT_API_URL;
+      if (!apiUrl) {
+        throw new Error("Contact API URL is not defined in environment variables");
+      }
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
