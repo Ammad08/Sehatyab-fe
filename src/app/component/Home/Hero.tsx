@@ -206,7 +206,11 @@ const Hero: React.FC = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5501/happy/qoute/submit", {
+      const apiUrl = process.env.NEXT_PUBLIC_QUOTE_API_URL;
+      if (!apiUrl) {
+        throw new Error("Contact API URL is not defined in environment variables");
+      }
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

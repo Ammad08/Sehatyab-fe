@@ -212,7 +212,11 @@ const Appointment = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5501/happy/appointment/create", {
+      const apiUrl = process.env.NEXT_PUBLIC_APPOINTMENT_API_URL;
+      if (!apiUrl) {
+        throw new Error("Contact API URL is not defined in environment variables");
+      }
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
