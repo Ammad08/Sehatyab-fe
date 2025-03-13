@@ -18,7 +18,7 @@ const OurProfessional: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-8 mt-12 w-full px-4">
                 {/* Office Address */}
                 {/* bg-[#06685F] */}
-                <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)]  hover:shadow-xl transition-all duration-300">
+                <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)] rounded-md  hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Office.svg"
                         alt="Office Location"
@@ -34,7 +34,7 @@ const OurProfessional: React.FC = () => {
                 </div>
 
                 {/* Email Box */}
-                <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)]  hover:shadow-xl transition-all duration-300">
+                <div className="p-8 flex flex-col items-center rounded-md bg-[rgba(29,166,120,1)]  hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Email.svg"
                         alt="Email Official"
@@ -50,7 +50,7 @@ const OurProfessional: React.FC = () => {
                 </div>
 
                 {/* Telephone */}
-                <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)]   hover:shadow-xl transition-all duration-300">
+                <div className="p-8 flex flex-col items-center rounded-md bg-[rgba(29,166,120,1)]   hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Telephone.svg"
                         alt="Telephone"
