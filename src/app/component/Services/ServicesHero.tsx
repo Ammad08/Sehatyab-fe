@@ -29,8 +29,7 @@ const ServicesHero = () => {
           {/* Flex container for text & rating */}
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
             <p className="text-white font-poppins font-medium max-w-xl text-left leading-relaxed">
-              We are committed to sustainability and innovation, providing Best
-              services to our customers.
+            Discover comprehensive mental health solutions with Healthy Mind’s online consultations and therapy services.  we provide tailored care to nurture your well-being.
             </p>
 
             {/* Google Rating */}

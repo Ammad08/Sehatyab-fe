@@ -25,8 +25,7 @@ const AboutHero = () => {
                     {/* Flex container for text & rating */}
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
                         <p className="text-white font-poppins font-medium max-w-xl text-left leading-relaxed">
-                            We are committed to sustainability and innovation, providing cutting-edge solar solutions for a greener future.
-                        </p>
+                        We are offering compassionate online psychiatric care. Our expert team empowers you to find peace and resilience through personalized support.</p>
 
                         {/* Google Rating */}
                         {/* <div className="flex  items-center gap-4 ">

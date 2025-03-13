@@ -30,9 +30,9 @@ const footerData = {
     { name: "Our Services", path: "/services" },
   ],
   importantLinks: [
-    { name: "Terms and Conditions", path: "/TermsAndConditions" },
-    { name: "FAQs", path: "/FAQs" },
-    { name: "Privacy Policy", path: "/PrivacyPolicy" },
+    { name: "Terms and Conditions", path: "/terms-and-conditions" },
+    { name: "FAQs", path: "/faqs" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
     { name: "Blog", path: "/blog" },
     { name: "Overview", path: "/about" },
   ],
