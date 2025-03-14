@@ -6,22 +6,22 @@ const consultants = [
   {
     name: "Dr. Raman Kumar",
     specialty: "Neurologist",
-    image: "/Appointment/Doc1.jpg",
+    image: "/Home/Doc1.svg",
   },
   {
     name: "Dr. Arit Parkash",
     specialty: "Dermatologist",
-    image: "/Appointment/Doc2.jpg",
+    image: "/Home/Doc2.svg",
   },
   {
     name: "Dr. Naveen Manzoor",
     specialty: "Dental Specialist",
-    image: "/Appointment/Doc3.jpg",
+    image: "/Home/Doc3.svg",
   },
   {
     name: "Assist. Professor Dr. Faisal Zafar",
     specialty: "Pediatric Neurologist",
-    image: "/Appointment/Doc4.jpg",
+    image: "/Home/Doc4.svg",
   },
 ];
 

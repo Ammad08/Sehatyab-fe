@@ -4,7 +4,7 @@ import { MdArrowRight } from "react-icons/md";
 
 const AboutHero = () => {
     return (
-        <main className="relative h-[60vh] lg:h-[50vh] 2xl:h-[30vh] bg-[url('/About/AboutHero.jpeg')] bg-cover bg-center flex items-center">
+        <main className="relative h-[60vh] lg:h-[50vh] 2xl:h-[30vh] bg-[url('/About/AboutHero.svg')] bg-cover bg-center flex items-center">
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-[#1DA678]/30 to-black/50"></div>
             <div className="absolute inset-0 bg-[rgba(29,166,120,0.1)]/25"></div>

@@ -307,7 +307,7 @@ const Appointment = () => {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
-                <Image src="/Home/name.png" alt="Name" width={20} height={20} />
+                <Image src="/Home/name.svg" alt="Name" width={20} height={20} />
                 <input
                   type="text"
                   name="fullName"
@@ -319,7 +319,7 @@ const Appointment = () => {
                 />
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
-                <Image src="/Home/email.png" alt="Email" width={20} height={20} />
+                <Image src="/Home/email.svg" alt="Email" width={20} height={20} />
                 <input
                   type="email"
                   name="email"
@@ -331,7 +331,7 @@ const Appointment = () => {
                 />
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
-                <Image src="/Home/phone.png" alt="Phone" width={20} height={20} />
+                <Image src="/Home/phone.svg" alt="Phone" width={20} height={20} />
                 <input
                   type="tel"
                   name="phone"
@@ -343,7 +343,7 @@ const Appointment = () => {
                 />
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
-                <Image src="/Home/date.png" alt="Date" width={20} height={20} />
+                <Image src="/Home/date.svg" alt="Date" width={20} height={20} />
                 <input
                   type="date"
                   name="dateOfAppointment"
@@ -354,7 +354,7 @@ const Appointment = () => {
                 />
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
-                <Image src="/Home/services.png" alt="Specialization" width={20} height={20} />
+                <Image src="/Home/services.svg" alt="Specialization" width={20} height={20} />
                 <select
                   name="specialization"
                   value={formData.specialization}
@@ -371,7 +371,7 @@ const Appointment = () => {
                 </select>
               </div>
               <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
-                <Image src="/Home/services.png" alt="Consultant" width={20} height={20} />
+                <Image src="/Home/services.svg" alt="Consultant" width={20} height={20} />
                 <select
                   name="consultant"
                   value={formData.consultant}
@@ -389,7 +389,7 @@ const Appointment = () => {
               </div>
             </div>
             <div className="flex items-center border border-gray-300 rounded-3xl p-3 px-6 gap-3 bg-white focus-within:border-[#2BA56A] transition-all">
-              <Image src="/Home/message.png" alt="Comments" width={20} height={20} className="mb-12" />
+              <Image src="/Home/message.svg" alt="Comments" width={20} height={20} className="mb-12" />
               <textarea
                 name="additionalComments"
                 value={formData.additionalComments}
@@ -414,7 +414,7 @@ const Appointment = () => {
         {/* Center - Doctor Image */}
         <div className="hidden lg:flex justify-start items-end w-[35%] xl:w-1/2 absolute bottom-0 right-48 xl:right-12">
           <Image
-            src="/Home/Doctor.png"
+            src="/Home/Doctor.svg"
             alt="Doctor"
             width={400}
             height={400}

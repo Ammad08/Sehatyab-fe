@@ -24,7 +24,7 @@ const HowItWorks = () => {
           {/* Step 1 */}
           <div className="flex flex-col items-center text-center flex-grow h-full">
             <Image 
-              src="/Home/vector 1.png" 
+              src="/Home/vector1.svg" 
               alt="Step 1" 
               width={60} 
               height={60} 
@@ -40,7 +40,7 @@ const HowItWorks = () => {
           {/* Step 2 */}
           <div className="flex flex-col items-center text-center flex-grow h-full">
             <Image 
-              src="/Home/vector 2.png" 
+              src="/Home/vector2.svg" 
               alt="Step 2" 
               width={60} 
               height={60} 
@@ -52,7 +52,7 @@ const HowItWorks = () => {
               Easypaisa, or JazzCash.
             </p>
             <Image 
-              src="/Home/payment.png" 
+              src="/Home/payment.svg" 
               alt="Payment Methods" 
               width={250} 
               height={230} 
@@ -63,7 +63,7 @@ const HowItWorks = () => {
           {/* Step 3 */}
           <div className="flex flex-col items-center text-center flex-grow h-full">
             <Image 
-              src="/Home/vector3.png" 
+              src="/Home/vector3.svg" 
               alt="Step 3" 
               width={60} 
               height={60} 

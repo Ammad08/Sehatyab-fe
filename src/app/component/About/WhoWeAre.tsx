@@ -13,7 +13,7 @@ const WhoWeAre = () => {
                 {/* Left Section - Image & Overlay */}
                 <section className="relative justify-center lg:justify-start flex">
                     <Image
-                        src="/About/WhoWeAre3.jpg"
+                        src="/About/WhoWeAre3.svg"
                         alt="Psychiatrist with patient"
                         width={450}
                         height={350}

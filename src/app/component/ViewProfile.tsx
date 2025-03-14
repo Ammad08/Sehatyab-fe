@@ -1387,7 +1387,7 @@ const ViewProfile: React.FC = () => {
   // Get doctor data from query parameters
   const doctorData = {
     name: searchParams.get("name") || "DR Iram Javed",
-    image: searchParams.get("image") || "/ViewProfile/Doc.png",
+    image: searchParams.get("image") || "/ViewProfile/Doc.svg",
     reviews: Number(searchParams.get("reviews")) || 10,
     rating: Number(searchParams.get("rating")) || 5,
     specialty: searchParams.get("specialty") || "Pediatric Neurologist",
@@ -1441,7 +1441,7 @@ const ViewProfile: React.FC = () => {
               </h3>
               <div className="inline-flex items-center text-xs sm:text-sm bg-blue-100 text-[rgba(24,185,213,1)] px-2.5 py-1 rounded-full">
                 <Image
-                  src="/Appointment/pmc.png"
+                  src="/Appointment/pmc.svg"
                   alt="PMC Verified"
                   width={16}
                   height={16}
@@ -1685,7 +1685,7 @@ const ViewProfile: React.FC = () => {
           <div className="bg-white p-4 2xl:w-[400px] sm:p-6 rounded-lg shadow-lg border">
             <div className="flex items-center space-x-2">
               <Image
-                src="/ViewProfile/GreenCall.png"
+                src="/ViewProfile/GreenCall.svg"
                 alt=""
                 width={33}
                 height={33}
@@ -1747,7 +1747,7 @@ const ViewProfile: React.FC = () => {
             <div className="mt-6 text-center">
               <button className="w-full flex items-center justify-center space-x-2 font-inter border border-[rgba(38,118,117,1)] text-[rgba(38,118,117,1)] font-bold py-2 rounded-full hover:bg-green-50 transition">
                 <Image
-                  src="/ViewProfile/Symbol.png"
+                  src="/ViewProfile/Symbol.svg"
                   alt=""
                   width={33}
                   height={33}
@@ -1762,7 +1762,7 @@ const ViewProfile: React.FC = () => {
           <div className="bg-white p-6 space-y-4 2xl:w-[400px] rounded-lg shadow-lg border">
             <div className="flex items-center space-x-2">
               <Image
-                src="/ViewProfile/Background.png"
+                src="/ViewProfile/Background.svg"
                 alt="View Profile"
                 width={33}
                 height={33}
