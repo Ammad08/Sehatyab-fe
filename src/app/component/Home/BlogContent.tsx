@@ -10,7 +10,7 @@ const BlogContent = () => {
       date: "April 17, 2024",
       comments: "No Comments",
       description: "MPracticing mindfulness daily helps in reducing anxiety, enhancing self-awareness, and promoting mental clarity for a balanced and fulfilling life.",
-      image: "/Home/Blog1.png",
+      image: "/Home/Blog1.svg",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const BlogContent = () => {
       date: "April 17, 2024",
       comments: "No Comments",
       description: "Exploring the psychology of happiness reveals ways to improve emotional resilience, cultivate gratitude, and create a fulfilling and joyful existence.",
-      image: "/Home/Blog2.png",
+      image: "/Home/Blog2.svg",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const BlogContent = () => {
       date: "April 17, 2024",
       comments: "No Comments",
       description: "Developing strong relationships requires trust, empathy, and active listening, fostering meaningful connections for a happier and healthier life.",
-      image: "/Home/Blog3.png",
+      image: "/Home/Blog3.svg",
     },
   ];
 

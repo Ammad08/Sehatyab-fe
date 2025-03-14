@@ -248,10 +248,10 @@ interface Doctor {
 
 // Define clinic images
 const clinicImages = {
-  rowPattern1: "/Appointment/YellowCam.png",
-  rowPattern2: "/Appointment/Hosp.png",
-  rowPattern3: "/Appointment/YellowCam.png",
-  rowPattern4: "/Appointment/RedCam.png",
+  rowPattern1: "/Appointment/YellowCam.svg",
+  rowPattern2: "/Appointment/Hosp.svg",
+  rowPattern3: "/Appointment/YellowCam.svg",
+  rowPattern4: "/Appointment/RedCam.svg",
 };
 
 // Define border colors for each doctor ID
@@ -275,7 +275,7 @@ const doctors: Doctor[] = [
   {
     id: 1,
     name: "Ms. Sukoon Fatima",
-    image: "/Appointment/BestDoc13.png",
+    image: "/Appointment/BestDoc13.svg",
     reviews: 1424,
     rating: 5,
     specialty: "Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist",
@@ -288,7 +288,7 @@ const doctors: Doctor[] = [
   {
     id: 2,
     name: "Dr. Ali Ajmal",
-    image: "/Appointment/BestDoc14.png",
+    image: "/Appointment/BestDoc14.svg",
     reviews: 1,
     rating: 5,
     specialty: "Pediatric Gastroenterologist",
@@ -301,7 +301,7 @@ const doctors: Doctor[] = [
   {
     id: 3,
     name: "Assist. Professor Dr. Faisal Zafar",
-    image: "/Appointment/BestDoc3.png",
+    image: "/Appointment/BestDoc3.svg",
     reviews: 14,
     rating: 5,
     specialty: "Pediatric Neurologist",
@@ -314,7 +314,7 @@ const doctors: Doctor[] = [
   {
     id: 4,
     name: "Dr. Naveen Manzoor",
-    image: "/Appointment/BestDoc4.png",
+    image: "/Appointment/BestDoc4.svg",
     reviews: 25,
     rating: 5,
     specialty: "General Physician, Internal Medicine",
@@ -329,7 +329,7 @@ const doctors: Doctor[] = [
   {
     id: 5,
     name: "Ms. Maryam Khan",
-    image: "/Appointment/BestDoc5.png",
+    image: "/Appointment/BestDoc5.svg",
     reviews: 1424,
     rating: 5,
     specialty: "Clinical Psychologist",
@@ -342,7 +342,7 @@ const doctors: Doctor[] = [
   {
     id: 6,
     name: "Prof. Dr. Ghulam Rasool",
-    image: "/Appointment/BestDoc6.png",
+    image: "/Appointment/BestDoc6.svg",
     reviews: 1,
     rating: 5,
     specialty: "Psychiatrist",
@@ -355,7 +355,7 @@ const doctors: Doctor[] = [
   {
     id: 7,
     name: "Ms. Sana Khan",
-    image: "/Appointment/BestDoc7.png",
+    image: "/Appointment/BestDoc7.svg",
     reviews: 14,
     rating: 5,
     specialty: "Clinical Psychologist",
@@ -368,7 +368,7 @@ const doctors: Doctor[] = [
   {
     id: 8,
     name: "Ms. Kalsoom Yasin",
-    image: "/Appointment/BestDoc8.png",
+    image: "/Appointment/BestDoc8.svg",
     reviews: 25,
     rating: 5,
     specialty: "Clinical Psychologist",
@@ -383,7 +383,7 @@ const doctors: Doctor[] = [
   {
     id: 9,
     name: "Ms. Sadia Irfan",
-    image: "/Appointment/BestDoc9.png",
+    image: "/Appointment/BestDoc9.svg",
     reviews: 1424,
     rating: 5,
     specialty: "Clinical Psychologist",
@@ -396,7 +396,7 @@ const doctors: Doctor[] = [
   {
     id: 10,
     name: "Mr. Zahid Sohail",
-    image: "/Appointment/BestDoc10.jpg",
+    image: "/Appointment/BestDoc10.svg",
     reviews: 1,
     rating: 5,
     specialty: "Family Counselor, Relationship Counselor",
@@ -409,7 +409,7 @@ const doctors: Doctor[] = [
   {
     id: 11,
     name: "Dr. Muhammad Ather",
-    image: "/Appointment/BestDoc11.png",
+    image: "/Appointment/BestDoc11.svg",
     reviews: 14,
     rating: 5,
     specialty: "Psychiatrist",
@@ -422,7 +422,7 @@ const doctors: Doctor[] = [
   {
     id: 12,
     name: "Dr. Qurrat Ulain",
-    image: "/Appointment/BestDoc12.jpg",
+    image: "/Appointment/BestDoc12.svg",
     reviews: 25,
     rating: 5,
     specialty: "Chief Medical Officer, Psychiatrist",
@@ -510,7 +510,7 @@ const DoctorList: React.FC = () => {
                   </div>
                   <span className="font-bold text-black">{doctor.reviews} reviews</span>
                   <div className="inline-flex items-center text-xs bg-blue-100 text-[rgba(24,185,213,1)] px-2.5 py-1 rounded-full">
-                    <Image src="/Appointment/pmc.png" alt="PMC Verified" width={16} height={16} />
+                    <Image src="/Appointment/pmc.svg" alt="PMC Verified" width={16} height={16} />
                     <span className="ml-1">PMC Verified</span>
                   </div>
                 </div>
@@ -571,7 +571,7 @@ const DoctorList: React.FC = () => {
                   </div>
                   <div className="flex justify-between items-center m-1">
                     <div className="flex items-center pt-2 gap-1">
-                      <Image src="/Appointment/Globe.png" alt="Globe Icon" width={16} height={16} />
+                      <Image src="/Appointment/Globe.svg" alt="Globe Icon" width={16} height={16} />
                       <p className="text-xs text-[rgba(10,199,10,1)]">Available</p>
                     </div>
                     <p className="text-xs font-medium text-gray-800">{clinic.price}</p>

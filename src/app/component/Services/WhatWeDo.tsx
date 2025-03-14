@@ -95,7 +95,7 @@ const WhatWeDo = () => {
         {/* Right Section - Image & Overlay */}
         <section className="relative flex justify-center lg:justify-start gap-8">
           <Image
-            src="/Services/WhatWeDo02.jpg"
+            src="/Services/WhatWeDo.svg"
             alt="Psychiatrist with patient"
             width={450}
             height={350}

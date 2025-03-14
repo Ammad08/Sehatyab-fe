@@ -478,7 +478,7 @@ export default function AppointmentForm() {
               <span className="text-gray-900">I am not a robot</span>
             </div>
             <div className="flex flex-col items-center justify-center text-[rgba(85,85,85,1)] pt-2">
-              <Image alt="Captcha" src="/Appointment/Image.png" width={30} height={10}></Image>
+              <Image alt="Captcha" src="/Appointment/Image.svg" width={30} height={10}></Image>
               <p className="text-xs">reCAPTCHA</p>
               <p className="text-xs">privacy - terms</p>
             </div>
