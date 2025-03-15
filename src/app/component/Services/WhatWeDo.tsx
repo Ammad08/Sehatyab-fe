@@ -86,7 +86,7 @@ const WhatWeDo = () => {
           </div>
 
           <Link href="/appointment">
-            <button className="mt-10 bg-[#1DA678] text-white w-fit font-bold py-3 px-7 shadow-lg hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">
+            <button className="mt-10 bg-[#1DA678] rounded-lg text-white w-fit font-bold py-3 px-7 shadow-lg hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">
               Book Appointment
             </button>
           </Link>

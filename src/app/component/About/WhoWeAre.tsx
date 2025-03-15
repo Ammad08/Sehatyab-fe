@@ -75,7 +75,7 @@ const WhoWeAre = () => {
                         ))}
                     </div>
 <Link href="/appointment">
-                    <button className="mt-10 bg-[#FFBC0A] font-poppins text-white w-fit font-bold py-3 px-7 shadow-lg hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">
+                    <button className="mt-10 bg-[#FFBC0A] rounded-lg font-poppins text-white w-fit font-bold py-3 px-7 shadow-lg hover:bg-yellow-500 transition-transform duration-300 transform hover:scale-105">
                         Book Appointment
                     </button>
                     </Link>
