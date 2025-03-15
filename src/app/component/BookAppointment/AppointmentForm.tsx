@@ -487,7 +487,7 @@ export default function AppointmentForm() {
           <button
             type="submit"
             disabled={loading}
-            className={`w-fit font-bold p-10 bg-[rgba(29,166,120,1)] text-white py-2 hover:bg-green-700 transition ${
+            className={`w-fit font-bold p-10 rounded-lg bg-[rgba(29,166,120,1)] text-white py-2 hover:bg-green-700 transition ${
               loading ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >

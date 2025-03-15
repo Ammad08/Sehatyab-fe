@@ -4,10 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaYoutube,
-  FaLinkedinIn,
+  // FaFacebookF,
+  // FaTwitter,
+  // FaYoutube,
+  // FaLinkedinIn,
   FaEnvelope,
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -18,8 +18,8 @@ import { motion } from "framer-motion";
 const footerData = {
   about: {
     description:
-      "Providing trusted healthcare solutions with excellence. Dedicated to your well-being, we ensure  care and innovative medical services. Our team of experienced professionals is committed to delivering personalized treatment, utilizing cutting-edge technology and evidence-based practices.With a patient-first approach, we strive to enhance quality of life through preventive care, accurate diagnoses, and effective treatments.  ",
-    socialIcons: [FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn],
+      "Providing trusted healthcare solutions with excellence. Dedicated to your well-being, we ensure  care and innovative medical services. Our team of experienced professionals is committed to delivering personalized treatment, utilizing cutting-edge technology and evidence-based practices.With a patient-first approach, we strive to enhance quality of life through preventive care, accurate diagnoses, and effective treatments.  "
+    // socialIcons: [FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn],
   },
   quickLinks: [
     { name: "Home", path: "/" },
@@ -39,13 +39,13 @@ const footerData = {
   contact: {
     hours: "Open All Day 08:00 AM – 08:00 PM or custom time",
     address: "123 Main Street, Suite 101",
-    email: "info@health.com",
-    phone: "(877)-444-6666",
+    email: "happymindclinicinfo@gmail.com",
+    phone: "+44 7456 393704",
   },
   bottomLinks: [
-    { name: "Disclaimer", path: "#" },
-    { name: "Privacy Policy", path: "#" },
-    { name: "GDPR Policy", path: "#" },
+    { name: "Disclaimer", path: "/disclaimer" },
+    { name: "Privacy Policy", path: "/privacy-policy" },
+    { name: "GDPR Policy", path: "/GDPR-policy" },
   ],
 };
 
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
         <div className="flex items-center justify-  md:pr-4  ">
           <Link href="/">
           <Image
-            src="/Home/Logo02.svg"
+            src="/Home/Logo.svg"
             alt="Logo"
             width={180}
             height={100}
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
           <p className="text-sm font- text-white px-1 text-justify  lg:text-start">
             {footerData.about.description}
           </p>
-          <div className="flex space-x-3">
+          {/* <div className="flex space-x-3">
             {footerData.about.socialIcons.map((Icon, index) => (
               <motion.div
                 key={index}
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
                 <Icon className="text-white/80 text-lg" />
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
 
         <div className="grid md:grid-cols-3 justify-between gap-8 py-4  md:gap-10 lg:gap-10 w-full lg:w-[65%]">
@@ -179,12 +179,13 @@ const Footer: React.FC = () => {
                 {footerData.contact.address}
               </span>
             </p>
-            <p className="flex items-center space-x-2">
-              <FaEnvelope className="text-yellow-400" />
-              <span className="text-sm font-bold text-white/80">
-                {footerData.contact.email}
-              </span>
-            </p>
+            <p className="flex items-center space-x-2  break-words">
+  <FaEnvelope className="text-yellow-400 flex-shrink-0" />
+  <span className="text-sm font-bold text-white/80 break-words">
+    {footerData.contact.email}
+  </span>
+</p>
+
             <p className="flex items-center space-x-2">
               <FaPhoneAlt className="text-yellow-400" />
               <span className="text-sm font-bold text-white/80">

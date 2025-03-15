@@ -49,7 +49,7 @@ export default function OurConsultants() {
               holistic wellness support.
             </p>
             <Link href="/appointment">
-              <button className="bg-[rgba(255,188,10,1)] text-md font-semibold text-white px-4 sm:px-6 py-2 rounded-full hover:bg-yellow-500 transition">
+              <button className="bg-[rgba(255,188,10,1)] text-md font-semibold text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-yellow-500 transition">
                 View More Doctors
               </button>
             </Link>

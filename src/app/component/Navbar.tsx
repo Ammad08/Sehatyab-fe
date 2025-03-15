@@ -46,13 +46,13 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-[#1DA678] px-6 xl:px-20 flex items-center z-50 shadow-lg relative">
+    <nav className="bg-[#1DA678]  px-6 xl:px-20 flex items-center z-50 shadow-lg relative">
       <main className="max-w-7xl md:px-16 w-full mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center p-2 ">
           <Link href="/">
           <Image
-            src="/Home/Logo02.svg"
+            src="/Home/Logo.svg"
             alt="Logo"
             width={180}
             height={100}

@@ -101,7 +101,7 @@ const MentalHealthDirectory: React.FC = () => {
           <div className="text-left">
             <Link href="/about">
               <motion.button
-                className="font-commissioner font-bold bg-[#FFBC0A] hover:shadow-lg shadow-gray-400 hover:shadow-gray-500 shadow-md text-white py-3 px-6 rounded-sm transition duration-500"
+                className="font-commissioner font-bold bg-[#FFBC0A] hover:shadow-lg shadow-gray-400 hover:shadow-gray-500 shadow-md text-white py-3 px-6 rounded-lg transition duration-500"
                 whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.95 }}
                 aria-label="Learn more about us"
