@@ -270,7 +270,7 @@ export default function AppointmentForm() {
     setError(null);
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_APPOINTMENT_API_URL;
+      const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/appointment/create`;
       if (!apiUrl) {
         throw new Error("Contact API URL is not defined in environment variables");
       }
