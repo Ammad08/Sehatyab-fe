@@ -206,7 +206,7 @@ const Hero: React.FC = () => {
     setError(null);
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_QUOTE_API_URL;
+      const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/qoute/submit`;
       if (!apiUrl) {
         throw new Error("Contact API URL is not defined in environment variables");
       }

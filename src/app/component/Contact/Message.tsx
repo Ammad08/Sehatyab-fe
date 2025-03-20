@@ -109,7 +109,7 @@ const Message: React.FC = () => {
     setError(null);
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_CONTACT_API_URL;
+      const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/contact/send`;
       if (!apiUrl) {
         throw new Error("Contact API URL is not defined in environment variables");
       }
