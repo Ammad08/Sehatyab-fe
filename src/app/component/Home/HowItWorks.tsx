@@ -24,7 +24,7 @@ const HowItWorks = () => {
           {/* Step 1 */}
           <div className="flex flex-col items-center text-center flex-grow h-full">
             <Image 
-              src="/Home/vector1.svg" 
+              src="/Home/Vector1.svg" 
               alt="Step 1" 
               width={60} 
               height={60} 
@@ -40,7 +40,7 @@ const HowItWorks = () => {
           {/* Step 2 */}
           <div className="flex flex-col items-center text-center flex-grow h-full">
             <Image 
-              src="/Home/vector2.svg" 
+              src="/Home/Vector2.svg" 
               alt="Step 2" 
               width={60} 
               height={60} 
@@ -63,7 +63,7 @@ const HowItWorks = () => {
           {/* Step 3 */}
           <div className="flex flex-col items-center text-center flex-grow h-full">
             <Image 
-              src="/Home/vector3.svg" 
+              src="/Home/Vector3.svg" 
               alt="Step 3" 
               width={60} 
               height={60} 
