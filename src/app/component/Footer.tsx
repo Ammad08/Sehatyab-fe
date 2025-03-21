@@ -177,8 +177,8 @@ const Footer: React.FC = () => {
     <span className="text-sm font-bold text-white/80">{footerData.contact.address}</span>
   </p>
 
-  <p className="flex items-center space-x-2 min-w-0">
-    <FaEnvelope className="text-yellow-400 flex-shrink-0" />
+  <p className="flex  space-x-2 min-w-0">
+    <FaEnvelope className="text-yellow-400 flex-shrink-0 mt-1" />
     <span className="text-sm font-bold text-white/80 w-full overflow-hidden break-all">
       {footerData.contact.email}
     </span>
