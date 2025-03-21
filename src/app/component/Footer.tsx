@@ -167,32 +167,29 @@ const Footer: React.FC = () => {
        
 
           {/* Contact Section */}
-          <motion.div variants={footerVariants} className="space-y-3 text-left mr-4">
-            <h3 className="font-bold text-xl text-nowrap text-white">Let’s Get In Touch</h3>
-            <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
-            <p className="text-sm font- text-white">
-              {footerData.contact.hours}
-            </p>
-            <p className="flex items-center space-x-2">
-              <FaMapMarkerAlt className="text-yellow-400" />
-              <span className="text-sm font-bold text-white/80">
-                {footerData.contact.address}
-              </span>
-            </p>
-            <p className="flex items-center space-x-2  break-words">
-  <FaEnvelope className="text-yellow-400 flex-shrink-0" />
-  <span className="text-sm font-bold text-white/80 break-words">
-    {footerData.contact.email}
-  </span>
-</p>
+          <motion.div variants={footerVariants} className="space-y-3 text-left">
+  <h3 className="font-bold text-xl text-nowrap text-white">Let’s Get In Touch</h3>
+  <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
+  <p className="text-sm text-white">{footerData.contact.hours}</p>
+  
+  <p className="flex items-center space-x-2">
+    <FaMapMarkerAlt className="text-yellow-400" />
+    <span className="text-sm font-bold text-white/80">{footerData.contact.address}</span>
+  </p>
 
-            <p className="flex items-center space-x-2">
-              <FaPhoneAlt className="text-yellow-400" />
-              <span className="text-sm font-bold text-white/80">
-                {footerData.contact.phone}
-              </span>
-            </p>
-          </motion.div>
+  <p className="flex items-center space-x-2 min-w-0">
+    <FaEnvelope className="text-yellow-400 flex-shrink-0" />
+    <span className="text-sm font-bold text-white/80 w-full overflow-hidden break-all">
+      {footerData.contact.email}
+    </span>
+  </p>
+
+  <p className="flex items-center space-x-2">
+    <FaPhoneAlt className="text-yellow-400" />
+    <span className="text-sm font-bold text-white/80">{footerData.contact.phone}</span>
+  </p>
+</motion.div>
+
         </div>
       </div>
 
