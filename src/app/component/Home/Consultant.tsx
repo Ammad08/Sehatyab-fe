@@ -19,7 +19,7 @@ const consultants = [
     image: "/Appointment/BestDoc7.svg",
   },
   {
-    name: "Assist. Professor Dr. Faisal Zafar",
+    name: "Dr. Faisal Zafar",
     specialty: "Pediatric Neurologist",
     image: "/Appointment/BestDoc11.svg",
   },

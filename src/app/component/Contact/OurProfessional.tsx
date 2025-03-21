@@ -45,7 +45,7 @@ const OurProfessional: React.FC = () => {
                     />
                     <h3 className="text-lg font-bold mt-6 font-commissioner text-[white]">Email Official</h3>
                     <p className="text-gray-200 font-commissioner text-sm mt-2 text-center">
-                        info@domain.com
+                    happymindclinicinfo@gmail.com
                     </p>
                 </div>
 
@@ -61,7 +61,7 @@ const OurProfessional: React.FC = () => {
                     />
                     <h3 className="text-lg font-bold mt-6 font-commissioner text-[white]">Telephone</h3>
                     <p className="text-gray-200 font-commissioner text-sm mt-2 text-center">
-                        (877)-555-6666
+                    +44 7456 393704
                     </p>
                 </div>
             </div>
