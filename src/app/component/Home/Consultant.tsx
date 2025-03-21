@@ -4,24 +4,24 @@ import Link from "next/link";
 
 const consultants = [
   {
-    name: "Dr. Raman Kumar",
+    name: "Dr. Ali Ajmal",
     specialty: "Neurologist",
-    image: "/Home/Doc1.svg",
+    image: "/Appointment/BestDoc14.svg",
   },
   {
-    name: "Dr. Arit Parkash",
+    name: "Prof Dr. Ghulam Rasool",
     specialty: "Dermatologist",
-    image: "/Home/Doc2.svg",
+    image: "/Appointment/BestDoc6.svg",
   },
   {
     name: "Dr. Naveen Manzoor",
     specialty: "Dental Specialist",
-    image: "/Home/Doc3.svg",
+    image: "/Appointment/BestDoc7.svg",
   },
   {
     name: "Assist. Professor Dr. Faisal Zafar",
     specialty: "Pediatric Neurologist",
-    image: "/Home/Doc4.svg",
+    image: "/Appointment/BestDoc11.svg",
   },
 ];
 
