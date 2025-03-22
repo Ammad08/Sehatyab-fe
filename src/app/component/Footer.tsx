@@ -9,7 +9,7 @@ import {
   // FaYoutube,
   // FaLinkedinIn,
   FaEnvelope,
-  FaMapMarkerAlt,
+  // FaMapMarkerAlt,
   FaPhoneAlt,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -38,9 +38,9 @@ const footerData = {
   ],
   contact: {
     hours: "Open All Day 08:00 AM – 08:00 PM or custom time",
-    address: "123 Main Street, Suite 101",
+    // address: "123 Main Street, Suite 101",
     email: "happymindclinicinfo@gmail.com",
-    phone: "+44 7456 393704",
+    phone: "03310001900",
   },
   bottomLinks: [
     { name: "Disclaimer", path: "/disclaimer" },
@@ -172,10 +172,10 @@ const Footer: React.FC = () => {
   <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
   <p className="text-sm text-white">{footerData.contact.hours}</p>
   
-  <p className="flex items-center space-x-2">
+  {/* <p className="flex items-center space-x-2">
     <FaMapMarkerAlt className="text-yellow-400" />
     <span className="text-sm font-bold text-white/80">{footerData.contact.address}</span>
-  </p>
+  </p> */}
 
   <p className="flex  space-x-2 min-w-0">
     <FaEnvelope className="text-yellow-400 flex-shrink-0 mt-1" />
