@@ -15,10 +15,10 @@ const OurProfessional: React.FC = () => {
             </div>
 
             {/* Contact Info Section */}
-            <div className="grid md:grid-cols-3 gap-8 mt-12 w-full px-4">
+            <div className="grid md:grid-cols-2 gap-8 mt-12 w-fit px-4">
                 {/* Office Address */}
                 {/* bg-[#06685F] */}
-                <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)] rounded-md  hover:shadow-xl transition-all duration-300">
+                {/* <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)] rounded-md  hover:shadow-xl transition-all duration-300">
                     <Image
                         src="/Contact/Office.svg"
                         alt="Office Location"
@@ -31,7 +31,7 @@ const OurProfessional: React.FC = () => {
                     <p className="text-gray-200 text-sm font-commissioner mt-2 text-center">
                         123 Main Street, Suite 101, Cityville
                     </p>
-                </div>
+                </div> */}
 
                 {/* Email Box */}
                 <div className="p-8 flex flex-col items-center rounded-md bg-[rgba(29,166,120,1)]  hover:shadow-xl transition-all duration-300">
@@ -61,7 +61,7 @@ const OurProfessional: React.FC = () => {
                     />
                     <h3 className="text-lg font-bold mt-6 font-commissioner text-[white]">Telephone</h3>
                     <p className="text-gray-200 font-commissioner text-sm mt-2 text-center">
-                    +44 7456 393704
+                    03310001900
                     </p>
                 </div>
             </div>

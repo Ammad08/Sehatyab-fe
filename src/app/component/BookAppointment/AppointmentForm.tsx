@@ -314,8 +314,14 @@ export default function AppointmentForm() {
     "Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist",
     "Pediatric Gastroenterologist",
     "Pediatric Neurologist",
+    "General Neurologist",
+
     "General Physician, Internal Medicine",
     "Clinical Psychologist",
+    "General Psychologist",
+    "general Psychologist",
+    "General Psychiatrist",
+
     "Psychiatrist",
     "Family Counselor, Relationship Counselor",
     "Chief Medical Officer, Psychiatrist",
