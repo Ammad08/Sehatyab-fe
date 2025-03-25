@@ -3,19 +3,19 @@ import Image from "next/image";
 
 const OurProfessional: React.FC = () => {
     return (
-        <main className="container max-w-6xl mx-auto px-4 pt-12 pb-2 text-center flex flex-col items-center">
+        <main className="container bg-gradient-to-r from-white via-[rgba(29,166,120,0.3)] to-white  max-w-6xl mx-auto px-4 py-6 pt-12 pb-2 text-center flex flex-col items-center">
             {/* Title Section */}
-            <div className="w-[85%] md:w-1/2 xl:w-[40%] ">
+            {/* <div className="w-[85%] md:w-1/2 xl:w-[40%] ">
                 <h5 className="text-[#FFBC0A] font-semibold font-poppins text-xs uppercase tracking-widest">
                     Meet With Professionals
                 </h5>
                 <h2 className="text-2xl md:text-3xl xl:text-4xl font-poppins font-bold text-[#06685F] mt-4 leading-snug">
                     Let’s Get In Touch With Our Great Team
                 </h2>
-            </div>
+            </div> */}
 
             {/* Contact Info Section */}
-            <div className="grid md:grid-cols-2 gap-8 mt-12 w-fit px-4">
+            <div className="grid md:grid-cols-2 gap-8  my-8 w-fit px-4">
                 {/* Office Address */}
                 {/* bg-[#06685F] */}
                 {/* <div className="p-8 flex flex-col items-center bg-[rgba(29,166,120,1)] rounded-md  hover:shadow-xl transition-all duration-300">
@@ -44,7 +44,7 @@ const OurProfessional: React.FC = () => {
                         className="animate-bounce"
                     />
                     <h3 className="text-lg font-bold mt-6 font-commissioner text-[white]">Email Official</h3>
-                    <p className="text-gray-200 font-commissioner text-sm mt-2 text-center">
+                    <p className="text-gray-200 font-commissioner text-md mt-2 text-center">
                     happymindclinicinfo@gmail.com
                     </p>
                 </div>
@@ -60,7 +60,7 @@ const OurProfessional: React.FC = () => {
                         className="animate-bounce"
                     />
                     <h3 className="text-lg font-bold mt-6 font-commissioner text-[white]">Telephone</h3>
-                    <p className="text-gray-200 font-commissioner text-sm mt-2 text-center">
+                    <p className="text-gray-200 font-commissioner text-md mt-2 text-center">
                     03310001900
                     </p>
                 </div>

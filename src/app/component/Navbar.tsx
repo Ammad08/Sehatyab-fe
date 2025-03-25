@@ -72,13 +72,12 @@ const NavBar: React.FC = () => {
 
         {/* Search & Login */}
         <div className="hidden lg:flex items-center space-x-6">
-          {/* <Link
-            href="/login"
-            className="hover:text-[#FFBC0A] transition text-white font-semibold text-sm"
+          <Link
+            href="/appointment"
           >
-            LOGIN
-          </Link> */}
-          <FaSearch className="text-white cursor-pointer hover:opacity-80 transition text-lg" />
+                      <FaSearch className="text-white cursor-pointer hover:opacity-80 transition text-lg" />
+
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}

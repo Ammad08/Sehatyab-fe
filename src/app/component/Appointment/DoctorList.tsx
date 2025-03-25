@@ -1348,7 +1348,7 @@ const doctors: Doctor[] = [
     id: 1,
     name: "Ms. Sukoon Fatima",
     image: "/Appointment/BestDoc13.svg",
-    reviews: 1424,
+    reviews: 0,
     rating: 5,
     specialty: "Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist",
     experience: "N/A",
@@ -1361,7 +1361,7 @@ const doctors: Doctor[] = [
     id: 2,
     name: "Dr. Ali Ajmal",
     image: "/Appointment/BestDoc14.svg",
-    reviews: 1,
+    reviews: 0,
     rating: 5,
     specialty: "Pediatric Gastroenterologist",
     experience: "17 Year(s)",
@@ -1700,21 +1700,23 @@ const DoctorList: React.FC = () => {
               />
 
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-[rgba(24,78,81,1)]">
+                <div className="flex gap-2"><h3 className="text-lg font-semibold text-[rgba(24,78,81,1)]">
                   {doctor.name}
                 </h3>
+                <div className="inline-flex items-center text-xs bg-blue-100 text-[rgba(24,185,213,1)] px-2.5 py-1 rounded-full">
+                    <Image src="/Appointment/pmc.svg" alt="PMC Verified" width={16} height={16} />
+                    <span className="ml-1">PMC Verified</span>
+                  </div></div>
+                
 
                 <div className="flex flex-wrap items-center text-yellow-500 text-sm gap-2">
-                  <div className="flex">
+                  <div className="flex ">
                     {[...Array(doctor.rating)].map((_, i) => (
                       <FaStar key={i} />
                     ))}
                   </div>
-                  <span className="font-bold text-black">{doctor.reviews} reviews</span>
-                  <div className="inline-flex items-center text-xs bg-blue-100 text-[rgba(24,185,213,1)] px-2.5 py-1 rounded-full">
-                    <Image src="/Appointment/pmc.svg" alt="PMC Verified" width={16} height={16} />
-                    <span className="ml-1">PMC Verified</span>
-                  </div>
+                  {/* <span className="font-bold text-black">{doctor.reviews} reviews</span> */}
+                  
                 </div>
 
                 <p className="text-sm text-gray-700">{doctor.specialty}</p>
