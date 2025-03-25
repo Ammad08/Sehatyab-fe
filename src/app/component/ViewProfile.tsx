@@ -1377,7 +1377,7 @@
 "use client"
 import Image from "next/image";
 import React from "react";
-import { FaStar, FaRegStar } from "react-icons/fa";
+// import { FaStar, FaRegStar } from "react-icons/fa";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
@@ -1451,14 +1451,14 @@ const ViewProfile: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center text-yellow-500 text-sm sm:text-base gap-2 mt-1">
+            {/* <div className="flex flex-wrap items-center text-yellow-500 text-sm sm:text-base gap-2 mt-1">
               <div className="flex">
                 {[...Array(doctorData.rating)].map((_, i) => (
                   <FaStar key={i} />
                 ))}
               </div>
               <span className="font-bold text-black">{doctorData.reviews} reviews</span>
-            </div>
+            </div> */}
 
             <p className="text-sm sm:text-base text-gray-700 mt-1">
               {doctorData.specialty}
@@ -1474,7 +1474,7 @@ const ViewProfile: React.FC = () => {
           <h1 className="text-[rgba(24,78,81,1)] font-semibold font-inter text-lg sm:text-xl py-2 sm:py-4">
             About {doctorData.name}
           </h1>
-          <p className="text-xs text-[rgba(100,100,100,1)] font-inter py-4 sm:py-6">
+          <p className="text-sm text-[rgba(100,100,100,1)] text-justify font-inter py-4 sm:py-6">
             {doctorData.name} is a distinguished medical professional specializing in {doctorData.specialty.toLowerCase()}. 
             With {doctorData.experience} of dedicated service, {doctorData.name} has established a reputation for excellence 
             in patient care and medical expertise. Having completed advanced medical training from prestigious institutions, 
@@ -1551,7 +1551,7 @@ const ViewProfile: React.FC = () => {
             Education & Other Info
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] font-semibold text-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] font-semibold text-sm">
             <ul className="list-disc pl-5">
               <li className="">
                 FCPS - COLLEGE OF PHYSICIANS & SURGEONS PAKISTAN
@@ -1565,7 +1565,7 @@ const ViewProfile: React.FC = () => {
           <h3 className="text-md sm:text-lg font-semibold mt-6">
             Specializations
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-xs font-semibold">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-sm font-semibold">
             <ul className="list-disc pl-5">
               <li>Paediatric Neurologist</li>
             </ul>
@@ -1575,7 +1575,7 @@ const ViewProfile: React.FC = () => {
           </div>
 
           <h3 className="text-md sm:text-xl font-semibold mt-6">Languages</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-xs font-semibold">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-[rgba(100,100,100,1)] text-sm font-semibold">
             <ul className="list-disc pl-5">
               <li>English</li>
               <li className="mt-2">Punjabi</li>
@@ -1586,7 +1586,7 @@ const ViewProfile: React.FC = () => {
           </div>
 
           <h3 className="text-md sm:text-xl font-semibold mt-6">Experience</h3>
-          <ul className="list-disc pl-5 pr-32 text-[rgba(100,100,100,1)] text-xs font-semibold">
+          <ul className="list-disc pl-5 pr-32 text-[rgba(100,100,100,1)] text-sm font-semibold">
             <li>
               2014 - Present, Paediatric Neurologist (Child Neurophysician) &
               <p className="mt-2">
@@ -1602,7 +1602,7 @@ const ViewProfile: React.FC = () => {
         </div>
 
         {/* 5th Section */}
-        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full max-w-3xl 2xl:max-w-5xl mx-auto my-4">
+        {/* <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg w-full max-w-3xl 2xl:max-w-5xl mx-auto my-4">
           <h2 className="text-[rgba(24,78,81,1)] font-semibold text-lg sm:text-xl py-2 sm:py-4 mb-4">
             Reviews About {doctorData.name}{" "}
             <span className="text-[rgba(100,100,100,1)]">({doctorData.reviews})</span>
@@ -1676,13 +1676,13 @@ const ViewProfile: React.FC = () => {
               View all {doctorData.reviews} Reviews
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="w-full px-4 md:w-2/3 lg:w-1/3">
         <div className="w-full lg:w-[350px] flex flex-col justify-start space-y-4">
           {/* 1st Form */}
-          <div className="bg-white p-4 2xl:w-[400px] sm:p-6 rounded-lg shadow-lg border">
+          {/* <div className="bg-white p-4 2xl:w-[400px] sm:p-6 rounded-lg shadow-lg border">
             <div className="flex items-center space-x-2">
               <Image
                 src="/ViewProfile/GreenCall.svg"
@@ -1756,7 +1756,7 @@ const ViewProfile: React.FC = () => {
                 <span>Book Video Consultation</span>
               </button>
             </div>
-          </div>
+          </div> */}
 
           {/* 2nd Form */}
           <div className="bg-white p-6 space-y-4 2xl:w-[400px] rounded-lg shadow-lg border">
@@ -1768,17 +1768,17 @@ const ViewProfile: React.FC = () => {
                 height={33}
               />
               <h2 className="text-lg font-semibold text-[rgba(6,104,95,1)]">
-                Ibrahim Specialist Clinic
+                Book your Appointment
               </h2>
             </div>
-            <div className="flex flex-col mx-6 justify-center">
+            {/* <div className="flex flex-col mx-6 justify-center">
               <p className="text-[rgba(100,100,100,1)] text-xs font-medium text- mb-4">
                 West Canal Road ,Amin Town ,Near Ideal Bakers and <br /> Kashmir
                 Pul, Faisalabad
               </p>
-            </div>
+            </div> */}
 
-            <div className="mt-4 flex justify-between">
+            <div className="mt-8 flex justify-between">
               <p className="text-[rgba(100,100,100,1)] text-sm font-semibold">
                 Fees:
               </p>
