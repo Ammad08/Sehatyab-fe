@@ -1350,7 +1350,7 @@ const doctors: Doctor[] = [
     image: "/Appointment/BestDoc13.svg",
     reviews: 0,
     rating: 5,
-    specialty: "Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist",
+    specialty: "Brain & N Nerves, Paediatric Neurologist",
     experience: "N/A",
     clinics: [
       { name: "Shifam Virtual Clinic", price: "Rs. 2000", available: true, image: clinicImages.rowPattern1 },
@@ -1363,7 +1363,7 @@ const doctors: Doctor[] = [
     image: "/Appointment/BestDoc14.svg",
     reviews: 0,
     rating: 5,
-    specialty: "Pediatric Gastroenterologist",
+    specialty: "Neurologist",
     experience: "17 Year(s)",
     clinics: [
       { name: "Shifam Peads Neurology And Wellness", price: "Rs. 2500", available: true, image: clinicImages.rowPattern2 },
@@ -1389,7 +1389,7 @@ const doctors: Doctor[] = [
     image: "/Appointment/BestDoc4.svg",
     reviews: 25,
     rating: 5,
-    specialty: "General Physician, Internal Medicine",
+    specialty: "General Psychiatrist",
     experience: "10 Year(s)",
     clinics: [
       { name: "Shifam Virtual Clinic", price: "Rs. 2500", available: true, image: clinicImages.rowPattern4 },
@@ -1470,7 +1470,7 @@ const doctors: Doctor[] = [
     image: "/Appointment/BestDoc10.svg",
     reviews: 1,
     rating: 5,
-    specialty: "Family Counselor, Relationship Counselor",
+    specialty: "General Psychologist",
     experience: "17 Year(s)",
     clinics: [
       { name: "Shifam Peads Neurology And Wellness", price: "Rs. 2500", available: true, image: clinicImages.rowPattern2 },

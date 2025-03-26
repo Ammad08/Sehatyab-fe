@@ -340,18 +340,16 @@ const Message: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* Get In Touch Section */}
         <div className="lg:col-span-1 bg-[rgba(29,166,120,1)] text-white p-8 rounded-lg shadow-lg flex flex-col justify-center items-center h-full">
-  <div className="text-center max-w-sm font-poppins flex flex-col justify-center h-full">
-    <div>
+  <div className="text-center max-w-sm font-poppins flex flex-col justify- pt-6 h-full">
       <h2 className="text-2xl md:text-4xl font-bold text-white mb-6">Get In Touch</h2>
-      <p className="text-sm md:text-base text-justify font- leading-loose">
-        Need support for your mental health? Our online psychiatrist booking and consultation platform makes it easy to connect with licensed professionals from the comfort of your home. Whether you’re seeking therapy, a consultation, or ongoing care, our team is here to help you every step of the way. Reach out today to schedule your appointment.
+      <p className="text-sm md:text-base text-justify text-gray-50 leading-loose">
+      Need support for your mental health? Our online psychiatrist booking and consultation platform provides a seamless and confidential way to connect with licensed professionals from the comfort of your home. Whether you're struggling with stress, anxiety, depression, or other mental health concerns, we offer personalized therapy sessions, expert consultations, and ongoing care tailored to your needs. With flexible scheduling and secure virtual sessions, getting the help you deserve has never been easier. Take the first step toward better mental well-being—schedule your appointment today.
       </p>
       <div className="mt-6 flex items-center gap-2 justify-start">
       <MdEmail className="text-[#FFBC0A] text-lg" />
       <a href="mailto:happymindclinicinfo@gmail.com" className="text-sm md:text-base hover:underline">
         happymindclinicinfo@gmail.com
       </a>
-    </div>
     </div>
     
   </div>
@@ -365,7 +363,7 @@ const Message: React.FC = () => {
           <h2 className="text-2xl md:text-3xl font-commissioner font-bold text-[#06685F] mt-2">
             Let’s Hear From You!
           </h2>
-          <p className="text-gray-600 text-sm font-commissioner mt-4">
+          <p className="text-gray-600 text-md font-commissioner mt-4">
             Reach out to our expert team. We’re here to help with any inquiries, support, or consultation.
           </p>
 
