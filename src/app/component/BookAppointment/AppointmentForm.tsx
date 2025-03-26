@@ -310,8 +310,8 @@ export default function AppointmentForm() {
   const specializations = [
     "Cardiology",
     "Neurology",
-    "Dermatology",
-    "Paediatrician & Child Specialist, Neurologist, Brain & N Nerves, Paediatric Neurologist",
+    // "Dermatology",
+    "Brain & N Nerves, Paediatric Neurologist",
     "Pediatric Gastroenterologist",
     "Pediatric Neurologist",
     "General Neurologist",
@@ -323,7 +323,7 @@ export default function AppointmentForm() {
     "General Psychiatrist",
 
     "Psychiatrist",
-    "Family Counselor, Relationship Counselor",
+    // "Family Counselor, Relationship Counselor",
     "Chief Medical Officer, Psychiatrist",
   ];
 

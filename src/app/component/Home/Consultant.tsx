@@ -10,12 +10,12 @@ const consultants = [
   },
   {
     name: "Prof Dr. Ghulam Rasool",
-    specialty: "Dermatologist",
+    specialty: "Psychiatrist",
     image: "/Appointment/BestDoc6.svg",
   },
   {
     name: "Dr. Naveen Manzoor",
-    specialty: "Dental Specialist",
+    specialty: "General Psychiatrist",
     image: "/Appointment/BestDoc7.svg",
   },
   {
