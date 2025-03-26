@@ -343,7 +343,7 @@ const Message: React.FC = () => {
   <div className="text-center max-w-sm font-poppins flex flex-col justify- pt-6 h-full">
       <h2 className="text-2xl md:text-4xl font-bold text-white mb-6">Get In Touch</h2>
       <p className="text-sm md:text-base text-justify text-gray-50 leading-loose">
-      Need support for your mental health? Our online psychiatrist booking and consultation platform provides a seamless and confidential way to connect with licensed professionals from the comfort of your home. Whether you're struggling with stress, anxiety, depression, or other mental health concerns, we offer personalized therapy sessions, expert consultations, and ongoing care tailored to your needs. With flexible scheduling and secure virtual sessions, getting the help you deserve has never been easier. Take the first step toward better mental well-being—schedule your appointment today.
+      Need support for your mental health? Our online psychiatrist booking and consultation platform provides a seamless and confidential way to connect with licensed professionals from the comfort of your home. Whether you are struggling with stress, anxiety, depression, or other mental health concerns, we offer personalized therapy sessions, expert consultations, and ongoing care tailored to your needs. With flexible scheduling and secure virtual sessions, getting the help you deserve has never been easier. Take the first step toward better mental well-being—schedule your appointment today.
       </p>
       <div className="mt-6 flex items-center gap-2 justify-start">
       <MdEmail className="text-[#FFBC0A] text-lg" />
