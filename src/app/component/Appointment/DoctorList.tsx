@@ -1425,7 +1425,7 @@ const doctors: Doctor[] = [
   },
   {
     id: 7,
-    name: "Ms. Sana Khan",
+    name: "Ms. Saba Khan",
     image: "/Appointment/BestDoc7.svg",
     reviews: 14,
     rating: 5,
@@ -1498,6 +1498,21 @@ const doctors: Doctor[] = [
     rating: 5,
     specialty: "Chief Medical Officer, Psychiatrist",
     experience: "15 Year(s)",
+    clinics: [
+      { name: "Shifam Virtual Clinic", price: "Rs. 2500", available: true, image: clinicImages.rowPattern4 },
+      { name: "Shifam Virtual Clinic (Import Checking)", price: "Rs. 2500", available: true, image: clinicImages.rowPattern4 },
+      { name: "Shifam Peads Neurology And Wellness", price: "Rs. 2500", available: true, image: clinicImages.rowPattern4 },
+      { name: "Shifam International Clinic (Virtual)", price: "Rs. 5000", available: true, image: clinicImages.rowPattern4 },
+    ],
+  },
+  {
+    id: 13,
+    name: "Dr. Ehsan Naveed",
+    image: "/Appointment/BestDoc15.svg",
+    reviews: 25,
+    rating: 5,
+    specialty: " Psychiatrist",
+    experience: "8 Year(s)",
     clinics: [
       { name: "Shifam Virtual Clinic", price: "Rs. 2500", available: true, image: clinicImages.rowPattern4 },
       { name: "Shifam Virtual Clinic (Import Checking)", price: "Rs. 2500", available: true, image: clinicImages.rowPattern4 },

@@ -255,9 +255,9 @@ const Hero: React.FC = () => {
               Professionals Psychiatrist
             </h1>
             <h2 className="text-2xl md:text-4xl xl:text-5xl font-semibold md:font-bold leading-tight text-gray-900">
-              Keep With Your <span className="text-[#1DA678]">Healthy</span>
+              Keep up With Your <span className="text-[#1DA678]">Mental & Psychological</span>
               <br />
-              Mentals & Psychology
+               Well-Being
             </h2>
             <p className="text-gray-600 max-w-lg font-commissioner text-base md:text-lg">
               Your mental health matters. Get the best psychiatric services to

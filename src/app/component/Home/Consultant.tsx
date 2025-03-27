@@ -4,14 +4,14 @@ import Link from "next/link";
 
 const consultants = [
   {
-    name: "Dr. Ali Ajmal",
+    name: "Prof. Dr. Ghulam Rasool",
     specialty: "Neurologist",
-    image: "/Appointment/BestDoc14.svg",
+    image: "/Appointment/BestDoc6.svg",
   },
   {
-    name: "Prof Dr. Ghulam Rasool",
+    name: "Dr. Ehsan Naveed",
     specialty: "Psychiatrist",
-    image: "/Appointment/BestDoc6.svg",
+    image: "/Appointment/BestDoc15.svg",
   },
   {
     name: "Dr. Naveen Manzoor",
