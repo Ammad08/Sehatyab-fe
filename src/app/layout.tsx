@@ -33,7 +33,6 @@
 //   );
 // }
 
-
 // import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 // import "./globals.css";
@@ -75,6 +74,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Chatbot from "./component/Home/Chatbot";
 import NavBar from "./component/Navbar";
 import Footer from "./component/Footer";
 
@@ -108,7 +108,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
-        <main>{children}</main>
+        <main>
+          <Chatbot />
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -17,6 +17,7 @@ const NavBar: React.FC = () => {
     { href: "/services", label: "OUR SERVICES" },
     { href: "/appointment", label: "BOOK APPOINTMENT" },
     { href: "/blog", label: "BLOG" },
+    { href: "/sound-theraphy", label: "SOUND THERAPY" },
     { href: "/contact", label: "CONTACT US" },
   ];
 
@@ -51,13 +52,13 @@ const NavBar: React.FC = () => {
         {/* Logo */}
         <div className="flex items-center p-2 ">
           <Link href="/">
-          <Image
-            src="/Home/Logo.svg"
-            alt="Logo"
-            width={180}
-            height={100}
-            priority
-          />
+            <Image
+              src="/Home/Logo.svg"
+              alt="Logo"
+              width={180}
+              height={100}
+              priority
+            />
           </Link>
         </div>
 
@@ -72,11 +73,8 @@ const NavBar: React.FC = () => {
 
         {/* Search & Login */}
         <div className="hidden lg:flex items-center space-x-6">
-          <Link
-            href="/appointment"
-          >
-                      <FaSearch className="text-white cursor-pointer hover:opacity-80 transition text-lg" />
-
+          <Link href="/appointment">
+            <FaSearch className="text-white cursor-pointer hover:opacity-80 transition text-lg" />
           </Link>
         </div>
 
