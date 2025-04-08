@@ -268,17 +268,44 @@ export const therapyData = {
       desc: "Boost positivity",
       tool: "App or paper",
     },
-    {
-      id: 5,
-      title: "Mandala Coloring",
-      desc: "Focus and calm",
-      tool: "Printable sheets",
-    },
-    {
-      id: 6,
-      title: "Gratitude Exercise",
-      desc: "Boost positivity",
-      tool: "App or paper",
-    },
+    
+      {
+        "id": 5,
+        "title": "Mindful Breathing",
+        "desc": "Calm mind and improve focus",
+        "tool": "Breathing app or audio"
+      },
+      {
+        "id": 6,
+        "title": "Nature Walk",
+        "desc": "Boost mood through walking",
+        "tool": "Tracker or journal"
+      },
+      {
+        "id": 7,
+        "title": "Body Scan Meditation",
+        "desc": "Relax body and reduce stress",
+        "tool": "Guided audio"
+      },
+      {
+        "id": 8,
+        "title": "Positive Affirmations",
+        "desc": "Build confidence and positivity",
+        "tool": "Affirmation cards or app"
+      },
+      {
+        "id": 9,
+        "title": "Creative Writing",
+        "desc": "Express thoughts and feelings",
+        "tool": "Notebook or notes app"
+      },
+      {
+        "id": 10,
+        "title": "Visualization Exercise",
+        "desc": "Imagine success and goals",
+        "tool": "Visualization script or app"
+      }
+    
+    
   ],
 };
