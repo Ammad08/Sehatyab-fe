@@ -250,7 +250,7 @@ export const therapyData = {
       desc: "Express your emotions through creative art",
       tool: "Paints or pencils",
       banner:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1614556859483-88c323e4aa01?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXJ0JTIwZXhlcmNpc2VzfGVufDB8fDB8fHww",
       steps: [
         "Gather your materials such as paints, pencils, or crayons, ensuring you have everything you need to start your creative journey comfortably and without interruptions.",
         "Find a quiet space where you can focus, free from distractions, allowing your mind to settle and fully engage in the artistic process ahead.",
@@ -258,10 +258,10 @@ export const therapyData = {
         "Reflect on your artwork for 5 minutes, thinking about what it reveals about your emotions and how the process made you feel overall.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1627141565818-db5c30649c0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFpbnRpbmclMjBtYXRlcmlhbHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1611248293543-e71973f8b94b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVpZXQlMjBwbGFjZSUyMGZvciUyMGFydHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1505569127510-bde1536937bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRyYXdpbmd8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1541680670548-88e8cd23c0f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXJ0d29ya3xlbnwwfHwwfHx8MA%3D%3D",
       ],
     },
     {
@@ -270,7 +270,7 @@ export const therapyData = {
       desc: "Reflect daily with guided prompts",
       tool: "Notebook",
       banner:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1550592704-6c76defa9985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8am91cm5hbGluZ3xlbnwwfHwwfHx8MA%3D%3D",
       steps: [
         "Set aside 10 minutes daily to journal, creating a consistent habit that allows you to process your thoughts and emotions in a structured, reflective way.",
         "Pick a prompt like 'What made me smile today?' to guide your writing, sparking positivity and helping you focus on meaningful moments in your life.",
@@ -278,10 +278,10 @@ export const therapyData = {
         "Review your entries weekly to notice patterns, reflect on your growth, and gain insights into how your feelings and experiences evolve over time.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1483546363825-7ebf25fb7513?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am91cm5hbHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdHRpbmd8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y3JlYXRpdmUlMjB3cml0aW5nfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1630032866155-f87ec4d047bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNyZWF0aXZlJTIwd3JpdGluZyUyMHBhdHRlcm4lMjByZXZpZXd8ZW58MHx8MHx8fDA%3D",
       ],
     },
     {
@@ -290,7 +290,7 @@ export const therapyData = {
       desc: "Find calm through coloring mandalas",
       tool: "Printable sheets",
       banner:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1658402995914-22a4ba7e1a94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFuZGFsYSUyMGNvbG9yaW5nfGVufDB8fDB8fHww",
       steps: [
         "Print or draw a mandala design, choosing a pattern that resonates with you and preparing a canvas for a calming and meditative coloring experience.",
         "Choose calming colors like soft blues, greens, or purples, selecting shades that soothe your mind and enhance the relaxation of the coloring process.",
@@ -298,10 +298,10 @@ export const therapyData = {
         "Display your finished mandala in a special place, admiring your work as a reminder of your creativity and the peace it brought you.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1586105251261-72a756497a11?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1590225472433-e20c5d118c60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbmRhbGElMjBkZXNpZ24lMjBkcmF3aW5nfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1660326447860-a4811bafdc75?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FsbWluZyUyMGNvbG9ycyUyMGZvciUyMGRyYXdpbmd8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1609436792750-d32fab9fe2cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRyYXdpbmclMjB3aXRoJTIwZm9jdXN8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1649089473160-91a7b1c466d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbmRhbGElMjBkcmF3aW5nfGVufDB8fDB8fHww",
       ],
     },
     {
@@ -310,7 +310,7 @@ export const therapyData = {
       desc: "Boost positivity with gratitude",
       tool: "App or paper",
       banner:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1668027400307-c316968e8015?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhdGl0dWRlJTIwZXhlcmNpc2V8ZW58MHx8MHx8fDA%3D",
       steps: [
         "List 3 things you're grateful for each day, writing them down to cultivate positivity and shift your focus toward the blessings in your life consistently.",
         "Write why they matter to you, exploring their significance in depth to deepen your appreciation and connect emotionally with each item on your list.",
@@ -318,10 +318,10 @@ export const therapyData = {
         "Repeat for 21 days to build a habit, allowing this routine to transform your mindset and bring a lasting sense of thankfulness and joy.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1579600161224-cac5a2971069?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9zaXRpdml0eXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1731963094554-c5c981ccdefd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmVlbGluZ3MlMjBhYm91dCUyMHdyaXR0aW5nfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1721206061215-9608db522adf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhZGluZyUyMG9mJTIwc2VsZiUyMHdyaXR0aW5nfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1509528640600-be205362320b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJlcGVhdCUyMHdyaXR0aW5nJTIwZm9yJTIwaGFiaXR8ZW58MHx8MHx8fDA%3D",
       ],
     },
     {
@@ -330,7 +330,7 @@ export const therapyData = {
       desc: "Calm your mind with focused breathing",
       tool: "Quiet space",
       banner:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1646820431248-e5fb9cda87ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fG1pbmRmdWwlMjBicmVhdGhpbmd8ZW58MHx8MHx8fDA%3D",
       steps: [
         "Sit comfortably in a quiet place where you won’t be disturbed, settling into a position that supports relaxation and helps you focus inward peacefully.",
         "Close your eyes and focus on your breath, tuning out distractions to center your mind and prepare for a calming and restorative breathing exercise.",
@@ -338,10 +338,10 @@ export const therapyData = {
         "Repeat for 5 minutes, maintaining the pattern to fully relax your body and mind, letting stress melt away with each controlled breath cycle.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1591228127791-8e2eaef098d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1685175474145-e8cb170c27f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2l0dGluZyUyMGluJTIwcXVpZXQlMjBwbGFjZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/reserve/YEc7WB6ASDydBTw6GDlF_antalya-beach-lulu.jpg?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaXRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1501139083538-0139583c060f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGltZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWVkaXRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
       ],
     },
     {
@@ -350,7 +350,7 @@ export const therapyData = {
       desc: "Recharge with a mindful walk in nature",
       tool: "Outdoor space",
       banner:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/uploads/1412533519888a485b488/bb9f9777?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwd2Fsa3xlbnwwfHwwfHx8MA%3D%3D",
       steps: [
         "Find a nearby park or natural area where you can immerse yourself in greenery, choosing a spot that feels inviting and peaceful for your walk.",
         "Walk slowly, noticing sights and sounds around you, taking time to appreciate the rustling leaves, birdsong, and beauty of nature as you go.",
@@ -358,10 +358,10 @@ export const therapyData = {
         "Spend at least 20 minutes in nature, allowing the time to unwind, recharge, and enjoy the calming effects of being surrounded by the natural world.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFya3xlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1604769688135-f245c9f9a486?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdhbGt8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1688589564655-77c19e47d7c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fGElMjBwZXJzb24lMjBicmVhdGhpbmclMjBkZWVwbHklMjBpbiUyMHBhcmt8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1529718836725-f449d3a52881?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2l0dGluZyUyMGluJTIwbmF0dXJlfGVufDB8fDB8fHww",
       ],
     },
   ],

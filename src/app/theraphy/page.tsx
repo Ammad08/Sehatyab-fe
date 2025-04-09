@@ -179,7 +179,9 @@ const MentalTherapy: React.FC = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-100/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                 <Image
-                  src={item.images[0] || "/images/default-therapy.jpg"}
+                  // src={item.images[0] || "/images/default-therapy.jpg"}
+                  src={item.banner}
+
                   width={300}
                   height={150}
                   alt={item.title}
@@ -199,7 +201,7 @@ const MentalTherapy: React.FC = () => {
                     item.title
                   )}`}
                 >
-                  <button className="mt-4 px-6 py-2 bg-gradient-to-r from-teal-500 to-green-400 text-white rounded-full font-poppins font-medium hover:from-teal-600 hover:to-green-500 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg">
+                  <button className="mt-4 px-6 py-2 bg-[#1DA678] text-white rounded-full font-poppins font-medium hover:from-teal-600 hover:to-green-500 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg">
                     Try Now
                     <span className="inline-block transform group-hover:translate-x-1 transition-transform duration-300">
                       →
