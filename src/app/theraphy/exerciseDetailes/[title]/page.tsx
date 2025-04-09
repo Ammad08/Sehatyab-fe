@@ -78,7 +78,7 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
         <div className="mb-12">
           <div className="w-full bg-gray-200 rounded-full h-2">
             <motion.div
-              className="bg-teal-300 h-2 rounded-full"
+              className="bg-[#1DA678] h-2 rounded-full"
               initial={{ width: "0%" }}
               animate={{ width: `${(100 / steps.length) * steps.length}%` }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -100,7 +100,7 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-white p-6 rounded-xl shadow-sm border-2 border-teal-100 flex flex-col md:flex-row items-start gap-6"
+              className="bg-white p-6 rounded-xl shadow-sm border border-[#1DA678] flex flex-col md:flex-row items-start gap-6"
             >
               <div className="w-full md:w-48 flex-shrink-0">
                 {images[index] && !imageErrors[index] ? (
@@ -151,7 +151,7 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition-colors text-lg font-poppins font-medium shadow-md"
+              className="px-8 py-3 bg-[#1DA678] text-white rounded-full hover:bg-teal-600 transition-colors text-lg font-poppins font-medium shadow-md"
             >
               Back to Calm
             </motion.button>
