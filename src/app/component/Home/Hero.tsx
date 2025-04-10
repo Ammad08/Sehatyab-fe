@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
             <h1 className="text-[#1DA678] font-semibold text-sm uppercase tracking-wider font-commissioner">
               Professionals Psychiatrist
             </h1>
-            <h2 className="text-2xl md:text-4xl xl:text-5xl font-semibold md:font-bold leading-tight text-gray-900">
+            <h2 className="text-2xl md:text-4xl xl:text-5xl font-semibold md:font-bold leading-relaxed md:leading-[1.2] xl:leading-[1.2] text-gray-900">
               Keep up With Your{" "}
               <span className="text-[#1DA678]">Mental & Psychological</span>
               <br />
