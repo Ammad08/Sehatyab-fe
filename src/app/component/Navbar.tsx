@@ -15,9 +15,9 @@ const NavBar: React.FC = () => {
     { href: "/", label: "HOME" },
     { href: "/about", label: "ABOUT US" },
     { href: "/services", label: "OUR SERVICES" },
+    { href: "/theraphy", label: "THERAPY" },
     { href: "/appointment", label: "BOOK APPOINTMENT" },
     { href: "/blog", label: "BLOG" },
-    { href: "/theraphy", label: "THERAPY" },
     { href: "/contact", label: "CONTACT US" },
   ];
 

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Happy Mind",
+  title: "Happy Mind - Your Trusted Mental Wellness Partner",
   description:
     "Healthy Mind offers expert online psychiatric consultations to support your mental well-being. Connect with certified psychiatrists for personalized care and therapy from the comfort of home.",
 };
@@ -37,6 +37,12 @@ export default function RootLayout({
         <NavBar />
         <main>
           {/* <Chatbot /> */}
+          <script
+            src="https://app.livechatai.com/embed.js"
+            data-id="cm9bcck150001l10c76sbye0m"
+            async
+            defer
+          ></script>
           {children}
         </main>
         <Footer />
