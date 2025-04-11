@@ -11,13 +11,12 @@ import {
   GiMeditation,
   GiSoundWaves,
   GiVideoCamera,
-  GiNotebook,
   GiLungs,
 } from "react-icons/gi";
 
 const MentalTherapy: React.FC = () => {
   const [activeTab, setActiveTab] = useState<
-    "sound" | "video" | "mindfulness" | "breathing" | "journaling" | "other"
+    "sound" | "video" | "mindfulness" | "breathing" | "other"
   >("sound");
   const [likedItems, setLikedItems] = useState<{ [key: string]: boolean }>({});
   const [searchQuery, setSearchQuery] = useState("");
@@ -65,7 +64,6 @@ const MentalTherapy: React.FC = () => {
 
   // Filter therapy items based on search query
   interface TherapyItem {
-    id: string | number;
     title: string;
     desc: string;
     src?: string;
@@ -87,7 +85,7 @@ const MentalTherapy: React.FC = () => {
     { id: "video", label: "Video Therapy", icon: <GiVideoCamera /> },
     { id: "mindfulness", label: "Mindfulness", icon: <GiMeditation /> },
     { id: "breathing", label: "Breathing", icon: <GiLungs /> },
-    { id: "journaling", label: "Journaling", icon: <GiNotebook /> },
+
     { id: "other", label: "Other Therapies", icon: <GiMeditation /> },
   ] as const;
 
@@ -98,15 +96,14 @@ const MentalTherapy: React.FC = () => {
       therapyData.mindfulness || []
     );
     const filteredBreathing = filterTherapyItems(therapyData.breathing || []);
-    const filteredJournaling = filterTherapyItems(therapyData.journaling || []);
     const filteredOther = filterTherapyItems(therapyData.other);
 
     switch (activeTab) {
       case "sound":
         return filteredSound.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeIn">
-            {filteredSound.map((item) => {
-              const itemId = `sound-${item.id}`;
+            {filteredSound.map((item, index) => {
+              const itemId = `sound-${index}`;
               return (
                 <div
                   key={itemId}
@@ -155,8 +152,8 @@ const MentalTherapy: React.FC = () => {
       case "video":
         return filteredVideo.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeIn">
-            {filteredVideo.map((item) => {
-              const itemId = `video-${item.id}`;
+            {filteredVideo.map((item, index) => {
+              const itemId = `video-${index}`;
               const videoId = item.src?.match(
                 /(?:v=|\/)([0-9A-Za-z_-]{11})/
               )?.[1];
@@ -227,8 +224,8 @@ const MentalTherapy: React.FC = () => {
       case "mindfulness":
         return filteredMindfulness.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeIn">
-            {filteredMindfulness.map((item) => {
-              const itemId = `mindfulness-${item.id}`;
+            {filteredMindfulness.map((item, index) => {
+              const itemId = `mindfulness-${index}`;
               const videoId = item.src?.match(
                 /(?:v=|\/)([0-9A-Za-z_-]{11})/
               )?.[1];
@@ -299,8 +296,8 @@ const MentalTherapy: React.FC = () => {
       case "breathing":
         return filteredBreathing.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeIn">
-            {filteredBreathing.map((item) => {
-              const itemId = `breathing-${item.id}`;
+            {filteredBreathing.map((item, index) => {
+              const itemId = `breathing-${index}`;
               const videoId = item.src?.match(
                 /(?:v=|\/)([0-9A-Za-z_-]{11})/
               )?.[1];
@@ -368,47 +365,12 @@ const MentalTherapy: React.FC = () => {
           </p>
         );
 
-      case "journaling":
-        return filteredJournaling.length ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeIn">
-            {filteredJournaling.map((item) => {
-              const itemId = `journaling-${item.id}`;
-              return (
-                <div
-                  key={itemId}
-                  className="bg-white p-5 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 animate-float border border-teal-100"
-                >
-                  <h3 className="text-lg font-bold text-teal-800 font-inter">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm font-inter">
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={`/therapy/journaling/${encodeURIComponent(
-                      item.title
-                    )}`}
-                  >
-                    <button className="mt-4 px-6 py-2 bg-teal-500 text-white rounded-full font-inter font-medium hover:bg-teal-600 transition-all duration-300">
-                      Start Now
-                    </button>
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        ) : (
-          <p className="text-center text-gray-600 font-inter">
-            No journaling prompts found.
-          </p>
-        );
-
       case "other":
         return filteredOther.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-zoomIn px-4">
-            {filteredOther.map((item) => (
+            {filteredOther.map((item, index) => (
               <div
-                key={item.id}
+                key={index}
                 className="bg-gradient-to-br from-white to-yellow-50 p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300 ease-in-out animate-pulseGlow overflow-hidden relative group border border-teal-100"
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-100/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
@@ -425,11 +387,8 @@ const MentalTherapy: React.FC = () => {
                 <p className="text-gray-700 text-base font-inter leading-relaxed mb-3">
                   {item.desc}
                 </p>
-                <p className="text-gray-500 text-sm font-inter">
-                  Tool: {item.tool}
-                </p>
                 <Link
-                  href={`/therapy/exerciseDetails/${encodeURIComponent(
+                  href={`/therapy/exerciseDetailes/${encodeURIComponent(
                     item.title
                   )}`}
                 >

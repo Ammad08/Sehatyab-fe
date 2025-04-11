@@ -53,7 +53,7 @@ const NavBar: React.FC = () => {
         <div className="flex items-center p-2 ">
           <Link href="/">
             <Image
-              src="/Home/Logo.svg"
+              src="/Home/HappyMindLogo.svg"
               alt="Logo"
               width={180}
               height={100}

@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 const footerData = {
   about: {
     description:
-      "Providing trusted healthcare solutions with excellence. Dedicated to your well-being, we ensure  care and innovative medical services. Our team of experienced professionals is committed to delivering personalized treatment, utilizing cutting-edge technology and evidence-based practices.With a patient-first approach, we strive to enhance quality of life through preventive care, accurate diagnoses, and effective treatments.  "
+      "Providing trusted healthcare solutions with excellence. Dedicated to your well-being, we ensure  care and innovative medical services. Our team of experienced professionals is committed to delivering personalized treatment, utilizing cutting-edge technology and evidence-based practices.With a patient-first approach, we strive to enhance quality of life through preventive care, accurate diagnoses, and effective treatments.  ",
     // socialIcons: [FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn],
   },
   quickLinks: [
@@ -69,25 +69,24 @@ const Footer: React.FC = () => {
       className="bg-[#1DA678] text-white  px-6 sm:px-12"
     >
       <div className="max-w-6xl mx-auto py-6 md:py-10 flex flex-col lg:flex-row gap-6 lg:gap-20 px-4 ">
-     
         {/* About Section */}
         <motion.div
           variants={footerVariants}
           className="space-y-4  col-span-1 sm:col-span-2 w-full lg:w-[35%]"
         >
-             {/* Logo */}
-        <div className="flex items-center justify-  md:pr-4  ">
-          <Link href="/">
-          <Image
-            src="/Home/Logo.svg"
-            alt="Logo"
-            width={180}
-            height={100}
-            priority
-            className=""
-          />
-          </Link>
-        </div>
+          {/* Logo */}
+          <div className="flex items-center justify-  md:pr-4  ">
+            <Link href="/">
+              <Image
+                src="/Home/HappyMindLogo.svg"
+                alt="Logo"
+                width={180}
+                height={100}
+                priority
+                className=""
+              />
+            </Link>
+          </div>
           <p className="text-sm font- text-white px-1 text-justify  lg:text-start">
             {footerData.about.description}
           </p>
@@ -105,10 +104,11 @@ const Footer: React.FC = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-3 justify-between gap-8 py-4  md:gap-10 lg:gap-10 w-full lg:w-[65%]">
-          
-             {/* Service Links */}
-             <motion.div variants={footerVariants} className="space-y-3 text-left">
-            <h3 className="font-bold text-xl whitespace-nowrap text-white">Important Links</h3>
+          {/* Service Links */}
+          <motion.div variants={footerVariants} className="space-y-3 text-left">
+            <h3 className="font-bold text-xl whitespace-nowrap text-white">
+              Important Links
+            </h3>
             <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
             <ul className="space-y-4 mt-4">
               {footerData.importantLinks.map(({ name, path }) => (
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </motion.div>
-          
+
           {/* Quick Links */}
           <motion.div variants={footerVariants} className="space-y-3 text-left">
             <h3 className="font-bold text-xl text-white">Quick Links</h3>
@@ -164,32 +164,33 @@ const Footer: React.FC = () => {
             </ul>
           </motion.div>
 
-       
-
           {/* Contact Section */}
           <motion.div variants={footerVariants} className="space-y-3 text-left">
-  <h3 className="font-bold text-xl text-nowrap text-white">Let’s Get In Touch</h3>
-  <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
-  <p className="text-sm text-white">{footerData.contact.hours}</p>
-  
-  {/* <p className="flex items-center space-x-2">
+            <h3 className="font-bold text-xl text-nowrap text-white">
+              Let’s Get In Touch
+            </h3>
+            <div className="h-1 w-10 bg-yellow-400 mb-2 rounded-full" />
+            <p className="text-sm text-white">{footerData.contact.hours}</p>
+
+            {/* <p className="flex items-center space-x-2">
     <FaMapMarkerAlt className="text-yellow-400" />
     <span className="text-sm font-bold text-white/80">{footerData.contact.address}</span>
   </p> */}
 
-  <p className="flex  space-x-2 min-w-0">
-    <FaEnvelope className="text-yellow-400 flex-shrink-0 mt-1" />
-    <span className="text-sm font-bold text-white/80 w-full overflow-hidden break-all">
-      {footerData.contact.email}
-    </span>
-  </p>
+            <p className="flex  space-x-2 min-w-0">
+              <FaEnvelope className="text-yellow-400 flex-shrink-0 mt-1" />
+              <span className="text-sm font-bold text-white/80 w-full overflow-hidden break-all">
+                {footerData.contact.email}
+              </span>
+            </p>
 
-  <p className="flex items-center space-x-2">
-    <FaPhoneAlt className="text-yellow-400" />
-    <span className="text-sm font-bold text-white/80">{footerData.contact.phone}</span>
-  </p>
-</motion.div>
-
+            <p className="flex items-center space-x-2">
+              <FaPhoneAlt className="text-yellow-400" />
+              <span className="text-sm font-bold text-white/80">
+                {footerData.contact.phone}
+              </span>
+            </p>
+          </motion.div>
         </div>
       </div>
 
