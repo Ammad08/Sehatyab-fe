@@ -94,40 +94,67 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="space-y-12"
+          className="relative mb-12"
         >
+          {/* Vertical Connector Line (Background) */}
+          <div className="absolute left-8 top-0 h-full w-0.5 bg-gradient-to-b from-teal-600 to-teal-300 opacity-50 z-0">
+            <motion.div
+              className="w-full h-full bg-teal-600"
+              initial={{ height: "0%" }}
+              animate={{ height: "100%" }}
+              transition={{ duration: 1.5, ease: "easeInOut", delay: 0.5 }}
+            />
+          </div>
+
           {steps.map((step, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-white p-6 rounded-xl shadow-sm border border-[#1DA678] flex flex-col md:flex-row items-start gap-6"
+              className="relative flex items-center gap-6 mb-10 last:mb-0"
             >
-              <div className="w-full md:w-48 flex-shrink-0">
-                {images[index] && !imageErrors[index] ? (
-                  <Image
-                    src={images[index]}
-                    alt={`Step ${index + 1}`}
-                    width={192}
-                    height={192}
-                    className="w-full h-48 object-cover rounded-lg"
-                    onError={() => handleImageError(index)}
-                  />
-                ) : (
-                  <div className="w-full h-48 flex items-center justify-center bg-teal-50 rounded-lg">
-                    <p className="text-gray-400 font-poppins text-sm">
-                      A calming view awaits
-                    </p>
-                  </div>
-                )}
+              {/* Step Number Circle */}
+              <div className="flex-shrink-0 w-16 h-16 bg-teal-600 text-white rounded-full flex items-center justify-center text-2xl font-bold z-10">
+                {index + 1}
               </div>
-              <div className="flex-1">
-                <h2 className="text-xl font-poppins font-medium text-teal-700 mb-3">
-                  Step {index + 1}
-                </h2>
-                <p className="text-base text-gray-700 leading-relaxed font-poppins">
-                  {step}
-                </p>
-              </div>
+
+              {/* Step Card */}
+              <motion.div
+                whileHover={{
+                  scale: 1.02,
+                  boxShadow: "0 8px 20px rgba(29, 166, 120, 0.15)",
+                }}
+                className="flex-1 bg-gradient-to-r from-white to-teal-50 p-6 rounded-xl shadow-md border border-teal-100 flex items-center gap-6"
+              >
+                {/* Step Content */}
+                <div className="flex-1">
+                  <h2 className="text-xl font-sans font-semibold text-teal-700 mb-2">
+                    Step {index + 1}
+                  </h2>
+                  <p className="text-base text-gray-700 leading-relaxed font-sans">
+                    {step}
+                  </p>
+                </div>
+
+                {/* Step Image */}
+                <div className="w-32 h-32 flex-shrink-0">
+                  {images[index] && !imageErrors[index] ? (
+                    <Image
+                      src={images[index]}
+                      alt={`Step ${index + 1}`}
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover rounded-lg shadow-sm"
+                      onError={() => handleImageError(index)}
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-teal-50 rounded-lg">
+                      <p className="text-gray-400 font-sans text-xs text-center">
+                        A calming view awaits
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
             </motion.div>
           ))}
         </motion.div>
@@ -147,7 +174,7 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
 
         {/* Back Button */}
         <div className="mt-12 text-center">
-          <Link href="/theraphy">
+          <Link href="/therapy">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

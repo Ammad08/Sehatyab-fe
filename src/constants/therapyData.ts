@@ -251,124 +251,93 @@ export const therapyData = {
 
   other: [
     {
+      id: 1,
       title: "Gratitude Prompt",
       desc: "Reflect on things you’re grateful for to boost positivity.",
       banner:
         "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       steps: [
-        "Find a quiet space and grab a notebook or open a journaling app.",
-        "Write down 3 things you’re grateful for today, big or small.",
-        "For each, write one sentence about why it matters to you.",
-        "Read your list and take a moment to feel the gratitude in your heart.",
+        "Find a quiet space, grab a notebook, or open a journaling app to start.",
+        "Write down three things you’re grateful for today, whether big or small, thoughtfully.",
+        "For each gratitude item, write one sentence explaining why it truly matters to you.",
+        "Read your gratitude list aloud, feeling the warmth of appreciation in your heart deeply.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "https://images.unsplash.com/photo-1511871893393-82e9c16b81e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlhcnl8ZW58MHx8MHx8fDA%3D", // Journal
+        "https://images.unsplash.com/photo-1605008423974-ad30a5d22125?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRpYXJ5fGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1568819297129-80fd50360f8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGpvdXJuYWx8ZW58MHx8MHx8fDI%3D",
+        "https://images.unsplash.com/photo-1607544836219-f9a2c8783742?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVhZCUyMGRpYXJ5fGVufDB8fDB8fHwy",
       ],
     },
     {
+      id: 2,
       title: "Worry Release",
       desc: "Write down your worries to let them go.",
       banner:
         "https://images.unsplash.com/photo-1550592704-6c76defa9985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       steps: [
-        "Set aside 10 minutes in a calm space with your journal.",
-        "Write down everything that’s worrying you, letting it all out.",
-        "For each worry, write one positive thought or solution.",
-        "Close your journal, take a deep breath, and let the worries go.",
+        "Set aside ten minutes in a calm, quiet space with your journal ready to write.",
+        "Write down every worry that’s on your mind, letting it all flow out freely.",
+        "For each worry, write one positive thought or a possible solution to feel better.",
+        "Close your journal, take a deep breath, and release the worries from your mind.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1550592704-6c76defa9985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1550592704-6c76defa9985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1550592704-6c76defa9985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1550592704-6c76defa9985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "https://images.unsplash.com/photo-1508780709619-79562169bc64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3", // Writing
+        "https://images.unsplash.com/photo-1662304718079-724b4a471460?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlYWQlMjBkaWFyeXxlbnwwfHwwfHx8Mg%3D%3D",
+        "https://images.unsplash.com/photo-1723740020886-1fb3f1805a16?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHdyaXRlJTIwcG9zaXRpdmUlMjB0aG91Z2h0fGVufDB8fDB8fHwy",
+        "https://images.unsplash.com/photo-1592963083551-30d6bb8486ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGRlZXAlMjBicmVhdGh8ZW58MHx8MHx8fDI%3D",
       ],
     },
     {
+      id: 3,
       title: "Reflect on Your Day",
       desc: "Think about your day to process your emotions.",
       banner:
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       steps: [
-        "Find a cozy spot and open your journal or app.",
-        "Write about one thing that made you smile today.",
-        "Write about one challenge you faced and how you handled it.",
-        "End with one thing you’re looking forward to tomorrow.",
+        "Find a cozy, comfortable spot and open your journal or app to begin reflecting.",
+        "Write about one thing that made you smile today, capturing the joyful moment vividly.",
+        "Write about one challenge you faced and describe how you handled it with resilience.",
+        "End by noting one thing you’re looking forward to tomorrow, feeling hopeful and excited.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "https://images.unsplash.com/photo-1483546363825-7ebf25fb7513?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am91cm5hbHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdHRpbmd8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y3JlYXRpdmUlMjB3cml0aW5nfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1630032866155-f87ec4d047bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNyZWF0aXZlJTIwd3JpdGluZyUyMHBhdHRlcm4lMjByZXZpZXd8ZW58MHx8MHx8fDA%3D",
       ],
     },
     {
-      title: "Self-Love Affirmations",
-      desc: "Write affirmations to boost your self-esteem.",
-      banner:
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      steps: [
-        "Sit in a quiet space with your journal or a piece of paper.",
-        "Write 3 affirmations, like 'I am enough' or 'I deserve happiness.'",
-        "Read each affirmation aloud, feeling its meaning in your heart.",
-        "Keep your affirmations somewhere you can see them daily.",
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      ],
-    },
-    {
+      id: 5,
       title: "Art Therapy Guide",
       desc: "Express your emotions through creative art.",
-      tool: "Paints or pencils",
       banner:
         "https://images.unsplash.com/photo-1614556859483-88c323e4aa01?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXJ0JTIwZXhlcmNpc2VzfGVufDB8fDB8fHww",
       steps: [
-        "Gather your materials like paints, pencils, or crayons to start creating.",
-        "Find a quiet space where you can focus and let your emotions flow.",
-        "Draw how you feel, using colors to represent your emotions, like blue for calm.",
-        "Reflect on your artwork for 5 minutes, noticing what it reveals about you.",
+        "Gather your art materials, such as paints, pencils, or crayons, to begin creating freely.",
+        "Find a quiet, distraction-free space where you can focus and let your emotions flow.",
+        "Draw how you feel, using colors like blue for calm to express your emotions.",
+        "Reflect on your artwork for five minutes, noticing what it reveals about your inner self.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1627141565818-db5c30649c0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1611248293543-e71973f8b94b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1505569127510-bde1536937bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1541680670548-88e8cd23c0f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3", // Art supplies
+        "https://images.unsplash.com/photo-1611248293543-e71973f8b94b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3", // Painting
+        "https://images.unsplash.com/photo-1505569127510-bde1536937bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3", // Drawing
+        "https://images.unsplash.com/photo-1541680670548-88e8cd23c0f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3", // Art reflection
       ],
     },
+
     {
-      title: "Progressive Muscle Relaxation",
-      desc: "Release tension by tensing and relaxing your muscles.",
-      banner:
-        "https://images.unsplash.com/photo-1550592704-6c76defa9985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8am91cm5hbGluZ3xlbnwwfHwwfHx8MA%3D%3D",
-      steps: [
-        "Lie down or sit in a comfortable position in a quiet space.",
-        "Start with your toes, tensing them for 5 seconds, then relax for 10 seconds.",
-        "Move up to your calves, thighs, and all the way to your face, tensing and relaxing.",
-        "Take 10 minutes to complete the cycle, feeling your body relax fully.",
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1518602164570-5f76c9d0759a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1518602164570-5f76c9d0759a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1518602164570-5f76c9d0759a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1518602164570-5f76c9d0759a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      ],
-    },
-    {
+      id: 7,
       title: "Mandala Coloring",
       desc: "Find calm through coloring intricate mandalas.",
       banner:
         "https://images.unsplash.com/photo-1658402995914-22a4ba7e1a94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       steps: [
-        "Print or draw a mandala design that feels calming to you.",
-        "Choose soothing colors like soft blues, greens, or purples.",
-        "Color slowly, focusing on each section to relax your mind.",
-        "Display your finished mandala as a reminder of your calm moment.",
+        "Print or draw a mandala design that feels calming and soothing to your mind.",
+        "Choose soothing colors like soft blues, greens, or purples to color your mandala.",
+        "Color slowly, focusing on each section to relax your mind and find inner peace.",
+        "Display your finished mandala as a beautiful reminder of your calm, mindful moment.",
       ],
       images: [
         "https://images.unsplash.com/photo-1590225472433-e20c5d118c60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
@@ -378,15 +347,16 @@ export const therapyData = {
       ],
     },
     {
+      id: 8,
       title: "Gratitude Exercise",
       desc: "Boost positivity by focusing on gratitude.",
       banner:
         "https://images.unsplash.com/photo-1668027400307-c316968e8015?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       steps: [
-        "List 3 things you're grateful for each day to shift your focus to positivity.",
-        "Write why they matter to you, deepening your appreciation for each one.",
-        "Read your list aloud to feel the gratitude in your heart.",
-        "Repeat for 21 days to build a habit of gratitude and joy.",
+        "List three things you’re grateful for each day to shift your focus to positivity.",
+        "Write why they matter to you, deepening your appreciation for each one with care.",
+        "Read your gratitude list aloud, feeling the warmth of gratitude in your heart.",
+        "Repeat for 21 days to build a lasting habit of gratitude and joyful thinking.",
       ],
       images: [
         "https://images.unsplash.com/photo-1579600161224-cac5a2971069?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
@@ -396,39 +366,22 @@ export const therapyData = {
       ],
     },
     {
+      id: 9,
       title: "Nature Walk",
       desc: "Recharge with a mindful walk in nature.",
       banner:
         "https://images.unsplash.com/uploads/1412533519888a485b488/bb9f9777?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
       steps: [
-        "Find a nearby park or natural area to immerse yourself in nature.",
-        "Walk slowly, noticing the sights and sounds around you, like birds or leaves.",
-        "Take 5 deep breaths of fresh air, feeling refreshed with each one.",
-        "Spend at least 20 minutes in nature to unwind and recharge.",
+        "Find a nearby park or natural area to immerse yourself in nature’s calming beauty.",
+        "Walk slowly, noticing the sights and sounds around you, like birds or rustling leaves.",
+        "Take five deep breaths of fresh air, feeling refreshed and rejuvenated with each one.",
+        "Spend at least 20 minutes in nature to fully unwind, recharge, and feel grounded.",
       ],
       images: [
-        "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1604769688135-f245c9f9a486?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1688589564655-77c19e47d7c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1529718836725-c449d3a52881?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      ],
-    },
-    {
-      title: "Affirmation Practice",
-      desc: "Repeat positive affirmations to uplift your spirit.",
-      banner:
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      steps: [
-        "Find a quiet space where you can focus on yourself.",
-        "Choose 3 affirmations, like 'I am strong' or 'I am at peace.'",
-        "Repeat each affirmation 5 times, feeling its meaning as you say it.",
-        "Practice daily for 5 minutes to build a positive mindset.",
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-        "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFya3xlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1604769688135-f245c9f9a486?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdhbGt8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1688589564655-77c19e47d7c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fGElMjBwZXJzb24lMjBicmVhdGhpbmclMjBkZWVwbHklMjBpbiUyMHBhcmt8ZW58MHx8MHx8fDA%3D",
+        "https://images.unsplash.com/photo-1529718836725-f449d3a52881?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2l0dGluZyUyMGluJTIwbmF0dXJlfGVufDB8fDB8fHww",
       ],
     },
   ],

@@ -64,6 +64,7 @@ const MentalTherapy: React.FC = () => {
 
   // Filter therapy items based on search query
   interface TherapyItem {
+    id?: number | string;
     title: string;
     desc: string;
     src?: string;
@@ -85,7 +86,6 @@ const MentalTherapy: React.FC = () => {
     { id: "video", label: "Video Therapy", icon: <GiVideoCamera /> },
     { id: "mindfulness", label: "Mindfulness", icon: <GiMeditation /> },
     { id: "breathing", label: "Breathing", icon: <GiLungs /> },
-
     { id: "other", label: "Other Therapies", icon: <GiMeditation /> },
   ] as const;
 
@@ -368,9 +368,9 @@ const MentalTherapy: React.FC = () => {
       case "other":
         return filteredOther.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-zoomIn px-4">
-            {filteredOther.map((item, index) => (
+            {filteredOther.map((item) => (
               <div
-                key={index}
+                key={item.id}
                 className="bg-gradient-to-br from-white to-yellow-50 p-6 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-3 transition-all duration-300 ease-in-out animate-pulseGlow overflow-hidden relative group border border-teal-100"
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-100/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
@@ -387,8 +387,9 @@ const MentalTherapy: React.FC = () => {
                 <p className="text-gray-700 text-base font-inter leading-relaxed mb-3">
                   {item.desc}
                 </p>
+                {/* Link to the exercise detail page */}
                 <Link
-                  href={`/therapy/exerciseDetailes/${encodeURIComponent(
+                  href={`/theraphy/exerciseDetailes/${encodeURIComponent(
                     item.title
                   )}`}
                 >
