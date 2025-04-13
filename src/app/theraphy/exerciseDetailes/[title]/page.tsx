@@ -1,189 +1,245 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { use } from "react"; // Import React.use
+import { use } from "react";
 import { motion } from "framer-motion";
 import { therapyData } from "../../../../constants/therapyData";
+import { FaArrowLeft, FaHeart } from "react-icons/fa";
 
 interface ExerciseDetailProps {
-  params: Promise<{ title: string }>; // Update type to reflect Promise
+  params: Promise<{ category: string; title: string }>;
 }
 
 const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
-  const resolvedParams = use(params); // Unwrap the Promise
+  const resolvedParams = use(params);
   const decodedTitle = decodeURIComponent(resolvedParams.title);
-  const [imageErrors, setImageErrors] = useState<boolean[]>([]);
-  const exercise = therapyData.other.find(
-    (item) => item.title === decodedTitle
-  );
 
-  // Animation variants
+  // Find the exercise across all categories
+  const exercise = Object.values(therapyData)
+    .find((cat) =>
+      cat.items.some(
+        (item) => item.title.toLowerCase().replace(/\s+/g, "-") === decodedTitle
+      )
+    )
+    ?.items.find(
+      (item) => item.title.toLowerCase().replace(/\s+/g, "-") === decodedTitle
+    );
+
+  // Animation variants for smooth transitions
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.2, delayChildren: 0.1 },
+      transition: { staggerChildren: 0.3, delayChildren: 0.2 },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const bannerVariants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
   if (!exercise) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <p className="text-xl text-gray-500 font-poppins">
-          Exercise not found. Let’s find something else to help you feel better.
-        </p>
-      </div>
-    );
-  }
-
-  const { title, desc, steps, images } = exercise;
-
-  const handleImageError = (index: number) => {
-    setImageErrors((prev) => {
-      const newErrors = [...prev];
-      newErrors[index] = true;
-      return newErrors;
-    });
-  };
-
-  return (
-    <section className="py-16 bg-gray-50 min-h-screen relative overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="container mx-auto px-6 max-w-4xl relative z-10">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-3xl md:text-4xl font-poppins font-semibold text-teal-800 text-center mb-4">
-            {title}
-          </h1>
-          <p className="text-lg text-gray-600 text-center mb-8 font-poppins">
-            {desc} – Take it one step at a time, you’ve got this.
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-green-50">
+        <div className="text-center p-6">
+          <p className="text-xl text-gray-600 font-sans">
+            Therapy not found. Let’s find another way to bring you peace.
           </p>
-        </motion.div>
-
-        {/* Progress Bar */}
-        <div className="mb-12">
-          <div className="w-full bg-gray-200 rounded-full h-2">
-            <motion.div
-              className="bg-[#1DA678] h-2 rounded-full"
-              initial={{ width: "0%" }}
-              animate={{ width: `${(100 / steps.length) * steps.length}%` }}
-              transition={{ duration: 1, ease: "easeInOut" }}
-            ></motion.div>
-          </div>
-          <p className="text-sm text-gray-500 mt-2 text-center font-poppins">
-            {steps.length} gentle steps to guide you
-          </p>
-        </div>
-
-        {/* Steps */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="relative mb-12"
-        >
-          {/* Vertical Connector Line (Background) */}
-          <div className="absolute left-8 top-0 h-full w-0.5 bg-gradient-to-b from-teal-600 to-teal-300 opacity-50 z-0">
-            <motion.div
-              className="w-full h-full bg-teal-600"
-              initial={{ height: "0%" }}
-              animate={{ height: "100%" }}
-              transition={{ duration: 1.5, ease: "easeInOut", delay: 0.5 }}
-            />
-          </div>
-
-          {steps.map((step, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="relative flex items-center gap-6 mb-10 last:mb-0"
-            >
-              {/* Step Number Circle */}
-              <div className="flex-shrink-0 w-16 h-16 bg-teal-600 text-white rounded-full flex items-center justify-center text-2xl font-bold z-10">
-                {index + 1}
-              </div>
-
-              {/* Step Card */}
-              <motion.div
-                whileHover={{
-                  scale: 1.02,
-                  boxShadow: "0 8px 20px rgba(29, 166, 120, 0.15)",
-                }}
-                className="flex-1 bg-gradient-to-r from-white to-teal-50 p-6 rounded-xl shadow-md border border-teal-100 flex items-center gap-6"
-              >
-                {/* Step Content */}
-                <div className="flex-1">
-                  <h2 className="text-xl font-sans font-semibold text-teal-700 mb-2">
-                    Step {index + 1}
-                  </h2>
-                  <p className="text-base text-gray-700 leading-relaxed font-sans">
-                    {step}
-                  </p>
-                </div>
-
-                {/* Step Image */}
-                <div className="w-32 h-32 flex-shrink-0">
-                  {images[index] && !imageErrors[index] ? (
-                    <Image
-                      src={images[index]}
-                      alt={`Step ${index + 1}`}
-                      width={128}
-                      height={128}
-                      className="w-full h-full object-cover rounded-lg shadow-sm"
-                      onError={() => handleImageError(index)}
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-teal-50 rounded-lg">
-                      <p className="text-gray-400 font-sans text-xs text-center">
-                        A calming view awaits
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </motion.div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Encouragement Note */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="mt-12 text-center bg-teal-50 p-6 rounded-xl border border-teal-200"
-        >
-          <p className="text-lg text-teal-800 font-poppins">
-            &quot;You&apos;re doing great—just being here is a step toward
-            peace.&quot;
-          </p>
-        </motion.div>
-
-        {/* Back Button */}
-        <div className="mt-12 text-center">
           <Link href="/therapy">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-[#1DA678] text-white rounded-full hover:bg-teal-600 transition-colors text-lg font-poppins font-medium shadow-md"
+              className="mt-4 px-6 py-2 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition-colors font-sans"
             >
-              Back to Calm
+              Explore More
             </motion.button>
           </Link>
         </div>
+      </div>
+    );
+  }
+
+  const { title, desc, banner, steps, src } = exercise;
+
+  // Truncate and adjust step descriptions to 15 words max
+  const truncatedSteps =
+    steps?.map((step) => {
+      const words = step.split(" ");
+      return words.slice(0, 15).join(" ") + (words.length > 15 ? "..." : "");
+    }) || [];
+
+  return (
+    <section className="py-12 min-h-screen bg-gradient-to-b from-blue-50 to-green-50 relative overflow-hidden">
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-0 left-0 w-64 h-64 bg-teal-100 rounded-full opacity-20 transform -translate-x-32 -translate-y-32"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-200 rounded-full opacity-20 transform translate-x-48 translate-y-48"></div>
+      </div>
+
+      <div className="container mx-auto px-6 max-w-6xl relative z-10">
+        {/* Back Button */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-6"
+        >
+          <Link href="/theraphy">
+            <button className="flex items-center gap-2 text-teal-600 hover:text-teal-800 font-sans text-lg transition-colors">
+              <FaArrowLeft />
+              Back to Calm
+            </button>
+          </Link>
+        </motion.div>
+
+        {/* Banner */}
+        <motion.div
+          variants={bannerVariants}
+          initial="hidden"
+          animate="visible"
+          className="relative w-full h-64 rounded-2xl mb-8 overflow-hidden shadow-lg"
+        >
+          <Image
+            src={banner || "/images/default-therapy.jpg"}
+            layout="fill"
+            objectFit="cover"
+            alt={title}
+            className="w-full h-full object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-teal-900/50 to-transparent"></div>
+        </motion.div>
+
+        {/* Title and Description */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-8"
+        >
+          <h2 className="text-4xl md:text-5xl font-sans font-bold text-teal-800 mb-4">
+            {title}
+          </h2>
+          <p className="text-lg text-gray-600 font-sans leading-relaxed">
+            {desc}
+          </p>
+        </motion.div>
+
+        {/* Video (if available) */}
+        {src && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-8"
+          >
+            <iframe
+              className="w-full h-64 md:h-96 rounded"
+              src={src}
+              title={title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </motion.div>
+        )}
+
+        {/* Steps */}
+        {truncatedSteps.length > 0 && (
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="flex flex-wrap justify-between items-center gap-6 px-4 py-10"
+          >
+            {truncatedSteps.map((step, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="flex flex-col items-center text-center relative w-[200px]"
+              >
+                {/* Step Number in Circle */}
+                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-emerald-700 text-white text-2xl font-bold rounded-bl-none rounded-2xl flex items-center justify-center shadow-lg">
+                  {index + 1}
+                </div>
+
+                {/* Curved Arrow */}
+                {index < truncatedSteps.length - 1 && (
+                  <div className="absolute top-8 right-[-60px]">
+                    <svg
+                      width="120"
+                      height="40"
+                      viewBox="0 0 120 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="transform rotate-[-5deg]"
+                    >
+                      <path
+                        d="M0 20 C40 0, 80 40, 120 20"
+                        stroke="#CBD5E1"
+                        strokeWidth="2"
+                        fill="none"
+                        strokeDasharray="6,6"
+                      />
+                    </svg>
+                  </div>
+                )}
+
+                {/* Step Title */}
+                <h4 className="mt-4 font-semibold text-teal-700 text-lg">
+                  Step {index + 1}
+                </h4>
+
+                {/* Step Description */}
+                <p className="text-gray-600 mt-2">
+                  {step.length > 100 ? step.slice(0, 100) + "..." : step}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+
+        {/* Completion Message */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="bg-teal-50 p-6 rounded-2xl text-center mb-10"
+        >
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <FaHeart className="text-teal-500 text-2xl" />
+            <h3 className="text-2xl font-sans font-semibold text-teal-700">
+              You Did It!
+            </h3>
+          </div>
+          <p className="text-gray-600 font-sans">
+            Amazing job completing this therapy! You’re taking such great care
+            of yourself. How about trying another calming activity?
+          </p>
+          <Link href="/therapy">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="mt-4 px-6 py-2 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition-colors font-sans"
+            >
+              Explore More
+            </motion.button>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
