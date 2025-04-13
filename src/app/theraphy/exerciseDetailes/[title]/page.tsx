@@ -164,7 +164,7 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="flex flex-wrap justify-between items-center gap-6 px-4 py-10"
+            className="flex flex-wrap justify-center lg:justify-between items-center gap-6 px-4 py-16"
           >
             {truncatedSteps.map((step, index) => (
               <motion.div
@@ -176,28 +176,6 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
                 <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-emerald-700 text-white text-2xl font-bold rounded-bl-none rounded-2xl flex items-center justify-center shadow-lg">
                   {index + 1}
                 </div>
-
-                {/* Curved Arrow */}
-                {index < truncatedSteps.length - 1 && (
-                  <div className="absolute top-8 right-[-60px]">
-                    <svg
-                      width="120"
-                      height="40"
-                      viewBox="0 0 120 40"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="transform rotate-[-5deg]"
-                    >
-                      <path
-                        d="M0 20 C40 0, 80 40, 120 20"
-                        stroke="#CBD5E1"
-                        strokeWidth="2"
-                        fill="none"
-                        strokeDasharray="6,6"
-                      />
-                    </svg>
-                  </div>
-                )}
 
                 {/* Step Title */}
                 <h4 className="mt-4 font-semibold text-teal-700 text-lg">
@@ -218,7 +196,7 @@ const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ params }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-teal-50 p-6 rounded-2xl text-center mb-10"
+          className="bg-teal-50 px-4 md:p-6 rounded-2xl text-center mb-10"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
             <FaHeart className="text-teal-500 text-2xl" />

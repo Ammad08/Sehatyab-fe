@@ -188,6 +188,7 @@ const MentalTherapy: React.FC = () => {
         </p>
       </motion.div>
 
+      {/* Search Bar */}
       <div className="max-w-2xl mx-auto mb-8 relative z-10">
         <div className="flex items-center bg-white rounded-full shadow-md p-2">
           <FaSearch className="text-gray-500 ml-4" />
@@ -202,6 +203,7 @@ const MentalTherapy: React.FC = () => {
         </div>
       </div>
 
+      {/* Categories Tab */}
       <header className="max-w-7xl mx-auto mb-10 relative z-10">
         <nav className="flex justify-center gap-4 flex-wrap">
           {tabs.map((tab) => (
