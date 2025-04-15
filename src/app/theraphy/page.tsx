@@ -78,7 +78,7 @@ const MentalTherapy: React.FC = () => {
   };
 
   // Handle tab selection (closes dropdown on mobile)
-  const handleTabSelect = (tabId: string) => {
+  const handleTabSelect = (tabId: (typeof tabs)[number]["id"]) => {
     setActiveTab(tabId);
     setIsDropdownOpen(false); // Close dropdown after selection
   };
