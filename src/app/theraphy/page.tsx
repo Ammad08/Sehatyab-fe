@@ -16,8 +16,8 @@ import {
 } from "react-icons/gi";
 
 const MentalTherapy: React.FC = () => {
-  const [activeTab, setActiveTab] =
-    useState<keyof typeof therapyData>("visualization");
+  // const [activeTab, setActiveTab] =
+  //   useState<keyof typeof therapyData>("visualization");
   const [searchQuery, setSearchQuery] = useState("");
   const [videoPopup, setVideoPopup] = useState<{
     src: string;
@@ -66,6 +66,22 @@ const MentalTherapy: React.FC = () => {
     { id: "physical", label: "Physical", icon: <GiBodyBalance /> },
     { id: "nature", label: "Nature", icon: <GiTreeBranch /> },
   ] as const;
+
+  const [activeTab, setActiveTab] = useState<(typeof tabs)[number]["id"]>(
+    tabs[0].id
+  ); // Default to first tab
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown toggle
+
+  // Toggle dropdown visibility
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+
+  // Handle tab selection (closes dropdown on mobile)
+  const handleTabSelect = (tabId: string) => {
+    setActiveTab(tabId);
+    setIsDropdownOpen(false); // Close dropdown after selection
+  };
 
   const renderContent = () => {
     const category = therapyData[activeTab];
@@ -204,12 +220,14 @@ const MentalTherapy: React.FC = () => {
       </div>
 
       {/* Categories Tab */}
-      <header className="max-w-7xl mx-auto mb-10 relative z-10">
-        <nav className="flex justify-center gap-4 flex-wrap">
+
+      <header className="max-w-7xl mx-auto mb-10 relative z-40">
+        {/* Desktop: Horizontal Tabs */}
+        <nav className="hidden sm:flex justify-center gap-4 flex-wrap">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => handleTabSelect(tab.id)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 ${
                 activeTab === tab.id
                   ? "bg-[#1DA678] text-white shadow-xl"
@@ -222,6 +240,58 @@ const MentalTherapy: React.FC = () => {
             </button>
           ))}
         </nav>
+
+        {/* Mobile: Dropdown Menu */}
+        <div className="sm:hidden relative">
+          <button
+            onClick={toggleDropdown}
+            className="flex items-center justify-between gap-2 px-4 py-2 w-full bg-[#1DA678] text-white rounded-lg font-bold text-lg transition-all duration-300"
+            aria-label="Toggle categories menu"
+            aria-expanded={isDropdownOpen}
+          >
+            {/* Display active tab's icon and label */}
+            <div className="flex items-center gap-2">
+              {tabs.find((tab) => tab.id === activeTab)?.icon}
+              {tabs.find((tab) => tab.id === activeTab)?.label}
+            </div>
+            {/* Chevron icon for dropdown */}
+            <svg
+              className={`w-5 h-5 transition-transform duration-300 ${
+                isDropdownOpen ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+
+          {/* Dropdown Content */}
+          {isDropdownOpen && (
+            <div className="absolute left-0 right-0 mt-2 bg-white rounded-lg shadow-xl z-20">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => handleTabSelect(tab.id)}
+                  className={`flex items-center gap-2 w-full px-4 py-3 text-left text-teal-800 font-medium text-base hover:bg-teal-100 ${
+                    activeTab === tab.id ? "bg-teal-100" : ""
+                  }`}
+                  aria-label={`Select ${tab.label}`}
+                >
+                  {tab.icon}
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </header>
 
       <main className="max-w-6xl mx-auto relative z-10">
